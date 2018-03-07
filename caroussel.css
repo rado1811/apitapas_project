@@ -1,0 +1,24 @@
+#caroussels {
+	position: relative;
+}
+
+#carousel-generic, .carousel-inner, .item {
+	height: 50vw;
+}
+
+.carousel-inner > .item > a > img, .carousel-inner > .item > img, .img-responsive {
+	max-width: none;
+	height: 50vw;
+}
+
+.col-sm-6 {
+	margin: 0;
+	padding: 0;
+}
+
+@media (max-width: 770px) {
+	.carousel-inner > .item > a > img, .carousel-inner > .item > img, .img-responsive {
+		max-width: 100%;
+		height: auto;
+	}
+}
