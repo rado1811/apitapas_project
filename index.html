@@ -6,6 +6,7 @@
 	<title>The Market Tavern Bordeaux</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="menu.css">
 </head>
 
 <body>
@@ -123,36 +124,172 @@
 
 	<!-- Menu -->
 	<section class="menu">
-
-			<h1>Menu</h1>
-			<h2>nos best seller</h2>
-			
-			<ul class="nav nav-tabs nav-justified">
-				<li role="presentation" class="active"><a href="#">Menu de la semaine</a></li>
-				<li role="presentation"><a href="#">Brunch</a></li>
-				<li role="presentation"><a href="#">Boissons</a></li>
-			</ul>
-
-			<div class="container-fluid best-seller">
-				<div class="row">
-					<div class="col-sm-3 photo-plat">
-						<img src="im/mordor.jpg" alt="L'équipe du Maket Tavern Bordeaux">
-					</div>
-					<div class="col-sm-3 description-plat">
-						<h3>Nom du plat</h3>
-						<p>Lorem ipsum dolor sit amet consectetur.</p>
-						<h4>10€</h4>
-					</div>
-					<div class="col-sm-3 photo-plat">
-						<img src="im/mordor.jpg" alt="L'équipe du Maket Tavern Bordeaux">
-					</div>
-					<div class="col-sm-3 description-plat">
-						<h3>Nom du plat</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-						<h4>10€</h4>
-					</div>
-				</div>
+		<div class="row">
+			<div class="col xs-12 col-sm-5 col-sm-offset-4">
+				<h1>Menu</h1>
+				<h2>nos best sellers</h2>
 			</div>
+
+			<div class="col-sm-3">
+		
+			  	<div class="btn-group" role="group">
+		    		<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		  			Télécharger le menu
+		      			<span class="caret"></span>
+		    		</button>
+		    		<ul class="dropdown-menu">
+		      			<li><a href="im/market_menu.jpg" download="market_menu">Menu de la Semaine</a></li>
+		 	 			<li><a href="im/market_carte_boissons.jpg" download="market_drinks_menu">Carte des boissons</a></li>
+		    		</ul>
+		 		</div><!--Fin du bouton dropdown-->
+	 		</div><!--Fin col-sm-3-->
+ 		</div><!--Fin de la row-->
+	
+
+		
+		<ul class="nav nav-tabs nav-justified" role="tablist">
+
+		    	<li role="presentation" class="active"><a href="#Menu" aria-controls="Menu" role="tab" data-toggle="tab">Menu de la semaine</a></li>
+
+			    <li role="presentation"><a href="#Brunch" aria-controls="Brunch" role="tab" data-toggle="tab">Brunch</a></li>
+
+			    <li role="presentation"><a href="#Boissons" aria-controls="Boissons" role="tab" data-toggle="tab">Boissons</a></li>
+
+	  	</ul>
+
+		<div class="container-fluid best-seller">				
+			<!--Onglet Menu de la semaine-->
+			<div class="tab-content">
+		    	<div role="tabpanel" class="tab-pane active" id="Menu">
+					<div class="row"><!--ROw plat 1 & 2-->
+						<div class="col-sm-3 photo-plat"><!--Plat 1-->
+							<img src="im/Bordelais_burger.JPG" alt="L'équipe du Maket Tavern Bordeaux">
+						</div>
+
+						<div class="col-sm-3 description-plat">
+							<h3>Burger  Bordelais</h3>
+							<p>Pain burger artisanal, steak haché de canard, sauce cheddar affiné maison, compotée d'oignons, salade et tomates.</p>
+							<h4>14.90€</h4>
+						</div><!--Fin plat 1-->
+					
+						<div class="col-sm-3 photo-plat"><!--Plat 2-->
+							<img src="im/veggie-burger-redim.jpg" alt="L'équipe du Maket Tavern Bordeaux">
+						</div>
+						<div class="col-sm-3 description-plat">
+							<h3>Veggie Burger</h3>
+							<p>Pain burger artisanal, galette de légumes, rosti de pommes de terre, sauce cheddar affiné maison, sauce Market, salade et tomates.</p>
+							<h4>12.90€</h4>
+						</div><!--Fin plat 2-->
+					</div><!--Fin row plat 1 & 2-->
+				
+					<div class="row hidden-xs"><!--Row plat 3 & 4-->
+						<div class="col-sm-3 photo-plat "><!--Plat 3-->
+							<img src="im/fish_and_chips.jpg" alt="L'équipe du Maket Tavern Bordeaux">
+						</div>
+						<div class="col-sm-3 description-plat">
+							<h3>Traditional Fish and Chips</h3>
+							<p>Filet de poisson blanc dans une chapelure à la bière Twisted Thistle servi avec sauce trtare, frites fraîches et mushy peas.</p>
+							<h4>14.90€</h4>
+						</div><!--Fin plat 3-->
+						<div class="col-sm-3 photo-plat"><!--Plat 4-->
+							<img src="im/ribs.jpg" alt="L'équipe du Maket Tavern Bordeaux">
+						</div>
+						<div class="col-sm-3 description-plat">
+							<h3>Market BBQ Ribs</h3>
+							<p>Travers de porc fumés cuisson lente, caramélisés sauce barbecue servis avec frites fraîches et salade.</p>
+							<h4>12.90€</h4>
+						</div><!--Fin plat 4-->
+					</div><!-- Fin row plat 3 & 4-->
+				</div><!--Fin onglet menu de la semaine-->
+
+				<!--Onglet Brunch-->
+				<div role="tabpanel" class="tab-pane" id="Brunch">
+					<div class="row"><!--Row brunch 1 & 2-->
+						<div class="col-sm-3 photo-plat"><!--Plat Brunch 1-->
+							<img src="im/market_salad.jpg" alt="L'équipe du Maket Tavern Bordeaux">
+						</div>
+
+						<div class="col-sm-3 description-plat">
+							<h3>Market Salad</h3>
+							<p>Lorem ipsum dolor sit amet consectetur.</p>
+							<h4>10€</h4>
+						</div><!--Fin plat Brunch 1-->
+					
+						<div class="col-sm-3 photo-plat"><!--Plat Brunch 2-->
+							<img src="im/Brunch.jpg" alt="L'équipe du Maket Tavern Bordeaux">
+						</div>
+						<div class="col-sm-3 description-plat">
+							<h3>Market Breakfast</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							<h4>10€</h4>
+						</div><!--Fin plat Brunch 2-->
+					</div><!--Fin row plat brunch 1 & 2-->
+				
+					<div class="row hidden-xs"><!--Row brunch 1 & 2-->
+						<div class="col-sm-3 photo-plat"><!--Plat Brunch 3-->
+							<img src="im/pièce_du_boucher.jpg" alt="L'équipe du Maket Tavern Bordeaux">
+						</div>
+						<div class="col-sm-3 description-plat">
+							<h3>Pièce du boucher</h3>
+							<p>Lorem ipsum dolor sit amet consectetur.</p>
+							<h4>10€</h4>
+						</div><!--Fin plat Brunch 3-->
+						<div class="col-sm-3 photo-plat"><!--Plat Brunch 4-->
+							<img src="im/avocado_burger.jpg" alt="L'équipe du Maket Tavern Bordeaux">
+						</div>
+						
+						<div class="col-sm-3 description-plat">
+							<h3>Avocado Burger</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							<h4>10€</h4>
+						</div><!--fin plat Brunch 4-->
+					</div><!--Fin row plat brunch 3 & 4-->
+				</div><!--Fin onglet Brunch-->
+
+				<!--Onglet boissons-->
+				<div role="tabpanel" class="tab-pane" id="Boissons">
+					<div class="row"><!-- Row boisson 1 & 2-->
+						<div class="col-sm-3 photo-plat"><!--Début boisson 1-->
+							<img src="im/mordor.jpg" alt="L'équipe du Maket Tavern Bordeaux">
+						</div>
+
+						<div class="col-sm-3 description-plat">
+							<h3>Boisson 1</h3>
+							<p>Lorem ipsum dolor sit amet consectetur.</p>
+							<h4>10€</h4>
+						</div><!--Fin boisson 1-->
+					
+						<div class="col-sm-3 photo-plat"><!--Début boisson 2-->
+							<img src="im/mordor.jpg" alt="L'équipe du Maket Tavern Bordeaux">
+						</div>
+						<div class="col-sm-3 description-plat">
+							<h3>Boisson 2</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							<h4>10€</h4>
+						</div><!--Fin boisson 2-->
+					</div><!-- Fin row boisson 1 & 2-->
+					
+					<div class="row"><!--Row boisson 3 & 4-->
+						<div class="col-sm-3 photo-plat"><!--Début boisson 3-->
+							<img src="im/mordor.jpg" alt="L'équipe du Maket Tavern Bordeaux">
+						</div>
+						<div class="col-sm-3 description-plat">
+							<h3>Boisson 3</h3>
+							<p>Lorem ipsum dolor sit amet consectetur.</p>
+							<h4>10€</h4>
+						</div><!--Fin boisson 3-->
+						<div class="col-sm-3 photo-plat"><!--Début boisson 4-->
+							<img src="im/mordor.jpg" alt="L'équipe du Maket Tavern Bordeaux">
+						</div>
+						<div class="col-sm-3 description-plat">
+							<h3>Boisson 4</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							<h4>10€</h4>
+						</div><!--Fin boisson 4-->
+					</div><!--Fin row boisson 3 & 4-->
+				</div><!--Fin onglet boisson-->
+			</div><!--Fin du tab content-->		
+		</div><!-- Fin du container fluid-->
 
 	</section>
 
