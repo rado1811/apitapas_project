@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+	<!DOCTYPE html>
 <html>
 
 <head>
@@ -20,13 +20,39 @@
 <body>
 	
 	<!-- Nav -->
-	<nav class="navbar navbar-default">
-		<!-- Button trigger modal -->
-		<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-			Réserver
-		</button>
 
-		<!-- Modal -->
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    	  <div class="container-fluid">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-brand-centered">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		     </div> 
+
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <a class="navbar-brand navbar-brand-centered hidden-xs">
+		      	<img src="logo/logo_white.svg" alt="logo market tavern" class="logo">
+		      </a>
+		    <div class="collapse navbar-collapse" id="navbar-brand-centered"></div>
+		      <ul class="nav navbar-nav navbar-left">
+		        <li><a href="#">Presentation</a></li>
+		        <li><a href="#">Menu</a></li>
+		        <li><a href="#">Evenements</a></li>
+		      </ul>
+		      <ul class="nav navbar-nav navbar-right">
+		        <li><a href="#">Contact / Horaires</a></li>
+		        <button type="button" class="btn btn-primary btn-lg hidden-xs" data-toggle="modal" data-target="#myModal">
+			Réserver
+				</button>
+				</ul>	
+		  </div><!-- /.container-fluid -->
+		</nav>
+
+<!-- Modal -->
 		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 			<div class="modal-dialog" role="document">
 		    	<div class="modal-content">
@@ -83,8 +109,15 @@
 		    	</div>
 			</div>
 		</div>
-	</nav>
+
+<!-- bouton reserver mobile -->
+<section>
+  <button class="btn_mobile visible-xs">Reserver</button>
+</section>
+
+
 	
+
 	<div class="container-fluid">
 		<div class="accroche"><h1>Le gastropub de Bordeaux</h1></div>
 		<div class="row">
@@ -97,6 +130,7 @@
 						<li data-target="#carousel-generic" data-slide-to="1"></li>
 						<li data-target="#carousel-generic" data-slide-to="2"></li>
 					</ol>
+
 
 					<div class="carousel-inner" role="listbox">		
 						<div class="item active">
@@ -265,6 +299,7 @@
 							<img src="im/Brunch.jpg" alt="L'équipe du Maket Tavern Bordeaux">
 						</div>
 						<div class="col-sm-3 description-plat">
+
 							<h3>Market Breakfast</h3>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 							<h4>10€</h4>
