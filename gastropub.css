@@ -1,0 +1,103 @@
+.histoire h1 {
+	color: white;
+	font-size: 4.5rem;
+	margin: 0;
+}
+
+.frame {
+	border: solid 1px white;
+	padding: 7%;
+	height: 45vw;
+	display: flex;
+	flex-direction: column;
+  	justify-content: center;
+}
+
+.content-photo {
+	margin: 0;
+	padding: 0;
+	height: 50vw;
+	overflow: hidden;
+}
+
+.content-photo img {
+	margin: 0;
+	padding: 0;
+	height: 50vw;
+	overflow: hidden;
+}
+
+.content-text {
+	margin: 0;
+	padding: 5%;
+	height: 50vw;
+	color: white;
+	font-size: 1.5rem;
+	text-align: center;
+	background-color: #89aeb7;
+}
+
+.presentation {
+	height: 30vw;
+	margin: 3rem 0 0 0;
+	display: auto;
+	text-align: justify;
+	overflow-y: auto;
+}
+
+.presentation::-webkit-scrollbar {
+    background-color: #89aeb7;
+    width: 10px;
+}
+
+.presentation::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-left: solid 6px #89aeb7;
+}
+
+
+
+
+@media (max-width: 770px) {
+	.content-photo img, .photo-plat img {
+		max-width: 100%;
+		height: auto;
+	}
+
+	.content-text {
+		margin: 0;
+		padding: 10%;
+		height: 100%;
+	}
+
+	.presentation {
+		height: 100%;
+		margin: 2rem 0 0 0;
+	}
+
+	.frame {
+		height: 100%;
+	}
+
+	.photo-plat {
+		height: 200px;
+	}
+
+	.description-plat {
+		height: 100%;
+	}
+}
+
+@media (min-width: 1366px) {
+	.histoire h1 {
+		font-size: 6rem;
+	}
+
+	.presentation {
+		height: 27vw;
+		padding: 0 3rem 0 3rem;
+		display: auto;
+		text-align: justify;
+		overflow-y: auto;
+	}
+}

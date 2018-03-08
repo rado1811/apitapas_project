@@ -1,0 +1,41 @@
+.container-fluid {
+	position: relative;
+}
+
+.accroche {
+	position: absolute;
+	z-index: 2;
+	width: 100%;
+}
+
+.accroche h1 {
+	color: white;
+	font-size: 5vw;
+	text-align: center;
+	margin-top: 30vw;
+	-webkit-text-shadow: 0 0 15px rgba(0, 0, 0, 1);
+	-moz-text-shadow: 0 0 15px rgba(0, 0, 0, 1);
+	-o-text-shadow: 0 0 15px rgba(0, 0, 0, 1);
+	text-shadow: 0 0 15px rgba(0, 0, 0, 1);
+}
+
+#caroussels {
+	position: relative;
+}
+
+#carousel-generic, .carousel-inner, .item {
+	height: 50vw;
+	background-color: black;
+}
+
+.carousel-inner > .item > a > img, .carousel-inner > .item > img, .img-responsive {
+	max-width: none;
+	height: 50vw;
+}
+
+@media (max-width: 770px) {
+	.carousel-inner > .item > a > img, .carousel-inner > .item > img, .img-responsive {
+		max-width: 100%;
+		height: auto;
+	}
+}

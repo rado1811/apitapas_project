@@ -1,0 +1,96 @@
+form {
+	margin: 5% 0 0 0;
+}
+
+/*.form .input-lg {
+	background-color: #57777f;
+}*/
+
+.form, .map {
+	margin: 0;
+	padding: 3%;
+	height: 50vw;
+	background-color: #89aeb7;
+}
+
+.form h1 {
+	font-family: "mermaid-reg", serif;
+	text-align: center;
+	color: white;
+	font-size: 4rem;
+	margin: 0;
+}
+
+.form p {
+	text-align: center;
+	color: white;
+}
+
+.form img {
+	width: 17vw;
+	margin: 2rem 0 0 0;
+}
+
+map-responsive {
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+
+.map-responsive iframe {
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+.form-control {
+	border: none;
+	font-size: 1.5rem;
+}
+
+.btn-contact {
+	float: right;
+	border-radius: 0;
+	border: solid 2px white;
+	background: none;
+	color: white;
+	font-family: "mermaid-reg", serif;
+	font-size: 2rem;
+	margin: 2rem 0 0 0;
+	padding: 0.7rem 3rem 0.7rem 3rem;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+}
+
+.btn-contact:hover {
+	border: solid 2px white;
+	background: white;
+	color: #89aeb7;
+}
+
+@media (max-width: 770px) {
+	.form {
+		margin: 0;
+		padding: 10%;
+		height: 100%;
+	}
+
+	.map {
+		height: 100vw;
+	}
+}
+
+@media (min-width: 1280px) {
+	.form h1 {
+		font-size: 6rem;
+	}
+
+	.form p {
+		font-size: 1.5rem;
+	}
+}

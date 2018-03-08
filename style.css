@@ -8,20 +8,20 @@
   src:  url('fonts/angltrr.ttf');
 }
 
+@font-face {
+  font-family: "mermaid-reg";
+  src:  url('fonts/Mermaid1001.ttf');
+}
 
-
-
-/* General */
 
 h1, h2, h3 {
 	font-family: "mermaid", serif;
 }
 
-h1 {
-	text-align: center;
-	font-size: 4.5rem;
-	margin: 0;
+p {
+	font-family: "angleterre", serif;
 }
+
 
 h2 {
 	text-align: center;
@@ -29,50 +29,15 @@ h2 {
 	margin: 0;
 }
 
-p {
-	font-family: "angleterre", serif;
-	font-size: 1.3rem;
-}
-
-.contenu-photo {
+body, section {
 	margin: 0;
 	padding: 0;
-	height: 50vw;
-	overflow: hidden;
 }
 
-.contenu-photo img {
+.col-sm-6 {
 	margin: 0;
 	padding: 0;
-	height: 50vw;
-	overflow: hidden;
 }
-
-.contenu-texte {
-	margin: 0;
-	padding: 5%;
-	height: 50vw;
-	background-color: #9bc1ca;
-}
-
-.contenu-texte p {
-	text-align: justify;
-}
-
-.presentation {
-	height: 30vw;
-	margin: 2rem 0 0 0;
-	overflow: hidden;
-}
-
-.cadre {
-	border: solid 1px gray;
-	padding: 7%;
-	height: 45vw;
-}
-
-
-
 
 /* Nav */
 
@@ -130,63 +95,12 @@ p {
 
 
 
-/* Slider */
-
-#caroussels {
-	position: relative;
-}
-
-#carousel-generic, .carousel-inner, .item {
-	height: 50vw;
-}
-
-.carousel-inner > .item > a > img, .carousel-inner > .item > img, .img-responsive {
-	max-width: none;
-	height: 50vw;
-}
-
-
-.carousel-caption {
-	right: 13%;
-	left: 13%;
-	bottom: 30%;
-}
-
-.carousel-caption h1 {
-	font-family: "partybusiness", serif;
-	font-size: 2rem;
-	text-align: left;
-}
-
-.carousel-caption h2 {
-	font-family: "partybusiness", serif;
-	font-size: 1.5rem;
-	text-align: left;
-}
-
-.col-sm-6 {
-	margin: 0;
-	padding: 0;
-}
-
-
-
-
-
-
-/* Le gastropub */
-
-.bg-blue {
-	background-color: #9bc1ca;
-}
-
-
-
 /* Menu */
+
 .menu {
 	position: relative;
-	margin: 2rem 0 2rem 0;
-	padding: 2rem 0 2rem 0;
+	margin: 2rem 0 0 0;
+	padding: 2rem 0 0 0;
 }
 
 .menu h1 {
@@ -225,36 +139,6 @@ p {
 @media (max-width: 768px) {
 	.separateur {
 		visibility: hidden;
-	}
-}
-
-@media (max-width: 450px) {
-	.carousel-inner > .item > a > img, .carousel-inner > .item > img, .img-responsive, .contenu-photo img, .photo-plat img {
-		max-width: 100%;
-		height: auto;
-	}
-
-	.contenu-texte {
-		margin: 0;
-		padding: 10%;
-		height: 100%;
-	}
-
-	.presentation {
-		height: 100%;
-		margin: 2rem 0 0 0;
-	}
-
-	.cadre {
-		height: 100%;
-	}
-
-	.photo-plat {
-		height: 200px;
-	}
-
-	.description-plat {
-		height: 100%;
 	}
 }
 
