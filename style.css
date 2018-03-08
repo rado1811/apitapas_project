@@ -8,8 +8,11 @@
   src:  url('fonts/angltrr.ttf');
 }
 
+@font-face {
+  font-family: "mermaid-reg";
+  src:  url('fonts/Mermaid1001.ttf');
+}
 
-/* General */
 
 h1, h2, h3 {
 	font-family: "mermaid", serif;
@@ -24,6 +27,16 @@ h2 {
 	text-align: center;
 	font-size: 2.5rem;
 	margin: 0;
+}
+
+body, section {
+	margin: 0;
+	padding: 0;
+}
+
+.col-sm-6 {
+	margin: 0;
+	padding: 0;
 }
 
 /* Nav */
@@ -86,8 +99,8 @@ h2 {
 
 .menu {
 	position: relative;
-	margin: 2rem 0 2rem 0;
-	padding: 2rem 0 2rem 0;
+	margin: 2rem 0 0 0;
+	padding: 2rem 0 0 0;
 }
 
 .menu h1 {

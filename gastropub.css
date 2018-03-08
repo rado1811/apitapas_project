@@ -1,17 +1,7 @@
-.gastropub h1 {
-	text-align: center;
+.histoire h1 {
 	color: white;
 	font-size: 4.5rem;
 	margin: 0;
-}
-
-.gastropub p {
-	color: white;
-	font-size: 1.5rem;
-}
-
-.bg-blue {
-	background-color: #9bc1ca;
 }
 
 .frame {
@@ -41,11 +31,14 @@
 	margin: 0;
 	padding: 5%;
 	height: 50vw;
-	background-color: #9bc1ca;
+	color: white;
+	font-size: 1.5rem;
+	text-align: center;
+	background-color: #89aeb7;
 }
 
 .presentation {
-	height: 27vw;
+	height: 30vw;
 	margin: 3rem 0 0 0;
 	display: auto;
 	text-align: justify;
@@ -53,13 +46,13 @@
 }
 
 .presentation::-webkit-scrollbar {
-    background-color: #9bc1ca;
+    background-color: #89aeb7;
     width: 10px;
 }
 
 .presentation::-webkit-scrollbar-thumb {
     background-color: white;
-    border-left: solid 6px #9bc1ca;
+    border-left: solid 6px #89aeb7;
 }
 
 
@@ -92,5 +85,19 @@
 
 	.description-plat {
 		height: 100%;
+	}
+}
+
+@media (min-width: 1366px) {
+	.histoire h1 {
+		font-size: 6rem;
+	}
+
+	.presentation {
+		height: 27vw;
+		padding: 0 3rem 0 3rem;
+		display: auto;
+		text-align: justify;
+		overflow-y: auto;
 	}
 }
