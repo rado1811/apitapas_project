@@ -1,0 +1,41 @@
+/*suppression des bordures des items du menu pills*/
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover, .nav-tabs.nav-justified>.active>a, .nav-tabs.nav-justified>.active>a:focus, .nav-tabs.nav-justified>.active>a:hover {
+	border-style: none;
+}
+.nav-tabs.nav-justified>li>a {
+
+	font-family: "mermaid", serif;
+	color:#333333;
+}
+
+
+/*changement police des items du menu pills*/
+.nav-tabs.nav-justified>li>a {
+	border-style: none;
+	font-family: "mermaid";
+	font-size: 2rem;
+	}
+
+.description-plat h3 {
+
+	font-family: "angleterre";
+}
+
+/*correction placement bouton téléchargement menu*/
+.btn-group, .btn-group-vertical {
+
+	margin-top:20%;
+}
+
+
+/*comportement responsive du boutton de téléchargement menu*/
+@media (max-width: 425px){
+
+	.btn-group, .btn-group-vertical {
+
+	margin-top:5%;
+	margin-right:30%; 
+	margin-left:30%;
+	}
+}
+
