@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+	<!DOCTYPE html>
 <html>
 
 <head>
@@ -11,33 +11,45 @@
 <body>
 	
 	<!-- Nav -->
-	<nav class="navbar navbar-default">
-		<div class="container-fluid">
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    	  <div class="container-fluid">
+		    <!-- Brand and toggle get grouped for better mobile display -->
 		    <div class="navbar-header">
-		    	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-			        <span class="sr-only">Toggle navigation</span>
-			        <span class="icon-bar"></span>
-			        <span class="icon-bar"></span>
-			        <span class="icon-bar"></span>
-		    	</button>
-		    	<a class="navbar-brand" href="#"><img src="im/logo.png" alt="Find the precious"></a>
-			</div>
+		      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-brand-centered">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		     </div> 
 
-			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">    
-		    	<ul class="nav navbar-nav navbar-right">
-			        <li><a href="#">Présentation</a></li>
-			        <li class="separateur">|</li>
-			       	<li><a href="#">Menu</a></li>
-			       	<li class="separateur">|</li>
-			       	<li><a href="#">Evènements</a></li>
-			       	<li class="separateur">|</li>
-			       	<li><a href="#">Contact / Horaires</a></li>
-			       	<li><a href="#">Réservation</a></li>
-		    	</ul>
-		    </div>
-		</div>
-	</nav>
-	
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <a class="navbar-brand navbar-brand-centered hidden-xs">
+		      	<img src="logo/logo_white.svg" alt="logo market tavern" class="logo">
+		      </a>
+		    <div class="collapse navbar-collapse" id="navbar-brand-centered">
+		      <ul class="nav navbar-nav navbar-left">
+		        <li><a href="#">Presentation</a></li>
+		        <li><a href="#">Menu</a></li>
+		        <li><a href="#">Evenements</a></li>
+		      </ul>
+		      
+		      <ul class="nav navbar-nav navbar-right">
+		        <li><a href="#">Contact / Horaires</a></li>
+		        <button type="button" class="btn btn-primary btn-lg hidden-xs" data-toggle="modal" data-target="#myModal">Reserver</button>
+		      </ul>
+		  </div>
+
+		  </div><!-- /.container-fluid -->
+		</nav>
+
+<section>
+  <button class="btn_mobile visible-xs">Reserver</button>
+</section>
+
+
+
+
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-sm-6">
@@ -50,7 +62,7 @@
 						<li data-target="#carousel-generic" data-slide-to="2"></li>
 					</ol>
 
-					<!-- Wrapper for slides -->
+						<!-- Wrapper for slides -->
 					<div class="carousel-inner" role="listbox">		
 						<div class="item active">
 							<img src="im/dark_vador.jpg" alt="Dark Vador">
@@ -157,6 +169,7 @@
 	</section>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 </body>
