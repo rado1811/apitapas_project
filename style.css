@@ -82,7 +82,7 @@ h2 {
 	margin: 0;
 }
 
-body, section {
+body, section, nav, footer, .container-fluid, .row {
 	margin: 0;
 	padding: 0;
 }
