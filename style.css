@@ -19,34 +19,38 @@
 	background-color: #9bc1ca;
 	margin: 0;
 	border: 0;
+	opacity: 0.9;
 }
 
 .navbar li a{
 	font-size: 2rem;
-	color: white;
+	background: none;
+	font-family: "angleterre";
 }
 
 .navbar-default .navbar-nav>li>a {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.navbar-brand {
-	position: relative;
+  color: white;
 }
 
 .navbar-right {
-	right: 5%;
+	right: 10%;
+	left: 40%;
+}
+
+.logo-div{
+	position: absolute;
 }
 
 .logo{
-	position: absolute;
-	left: -5vw	;
-	width: 32rem;
-	top: -1vw;
+	position: fixed;
+	left: 42%;
+	width: 16%;
+	right: 42%;
+	top: -19vw;
 	height: auto;
-	display: block;
 }
 
 .btn_mobile{
@@ -60,21 +64,6 @@
   	border-color: #46b8da;
   	z-index:1;
 }
-
-@media screen and (min-width:768px){
-    .navbar-brand-centered {
-        position: absolute;
-        left: 50%;
-        display: block;
-        width: 160px;
-        text-align: center;
-        background-color: #9bc1ca;
-    }
-    
-    .navbar>.container .navbar-brand-centered, 
-    .navbar>.container-fluid .navbar-brand-centered {
-        margin-left: -80px;
-    } 
 
 
 h1, h2, h3 {
@@ -168,9 +157,3 @@ body, section {
 	}
 }
 
-@media (max-width: 1000px) {
-	.navbar-right {
-		float: left !important;
-		margin-right: 0;
-	}
-}
