@@ -1,0 +1,38 @@
+.inline-tab
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin-top: 2vw;
+	
+	
+}
+
+.col-sm-6
+{
+	margin: 0;
+	padding: 0;
+	
+}
+
+.pic-event img
+{
+	height: auto;
+	max-width: 100%;
+}
+
+
+.nav-tabs
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+
+}
+
+.tab-content
+{
+		height: 50vw;
+		background-color: #89AEB7;
+		color: #FFFFFF;
+}
