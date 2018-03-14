@@ -1,8 +1,26 @@
+.modal-input {
+    border: none;
+    border-radius: 3px;
+    padding: 2%;
+    font-size: 1.5rem;
+    color: #343838;
+}
+
+#champ_date1 {
+    padding: 2% !important;
+}
+
+.modal-content {
+    background-color: #343838;
+    padding: 5%;
+    border-radius: 0;
+}
+
 .modal h4 {
     font-family: "mermaid-reg", serif;
     text-align: center;
     font-size: 4rem;
-    color: #89aeb7;
+    color: #d8c091;
 }
 
 .modal-header, .modal-footer, .modal-body {
@@ -11,29 +29,36 @@
     padding: 0;
 }
 
-.modal-header {
-    padding: 20px;
+.modal-body img {
+    height: 3vw;
+    margin: 0 0 4% 0;
 }
 
-.modal-footer {
-    padding-bottom: 40px;
+.modal-header, .modal-footer {
+    padding: 0;
 }
 
-select {
+.frame-modal {
+    border: solid 1px #d8c091;
+    padding: 7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#champ_date1, select, input, .selecteur {
     padding: 5px;
-}
-
-.selecteur {
-    width: 55%;
+    width: 70%;
+    margin-bottom: 4%;
 }
 
 .btn-modal {
     font-family: "mermaid-reg", serif;
     font-size: 2rem;
-    color: #89aeb7;
-    width: 55%;
-    background-color: white;
-    border: solid 2px #89aeb7;
+    color: #d8c091;
+    width: 70%;
+    background-color: #343838;
+    border: solid 2px #d8c091;
     border-radius: 0;
     margin: 2rem 0 0 0;
     padding: 0.7rem 3rem 0.7rem 3rem;
@@ -43,15 +68,19 @@ select {
     transition: all 0.3s ease-out;
 }
 
-.btn-modal:hover {
-    color: white;
-    background: #89aeb7;
-    border: solid 2px #89aeb7;
+.btn-modal:hover, .btn-modal:active {
+    color: #343838;
+    background: #d8c091;
+    border: solid 2px #d8c091;
+}
+
+.close {
+    color: #d8c091;
 }
 
 /* DEBUT calendrier JS : jsSimpleDatePickr */
 #calendarMain1 {
-    margin: 0 0 0 30%;
+    margin: 0 0 0 25%;
 }
 
 /* conteneur calendrier */
@@ -62,7 +91,6 @@ select {
     width: 230px;
     padding: 5px 10px 10px 10px;
     background-color: #2e373f;
-    /*background-color: rgba(46, 55, 63, 0.95);*/
     border-radius: 10px;
     -moz-box-shadow: 0 0 10px #555;
     -webkit-box-shadow: 0 0 10px #555;
@@ -151,3 +179,14 @@ select {
     border-color: #c44d38;
 }
 /* FIN calendrier JS : jsSimpleDatePickr */
+
+
+@media (max-width: 500px) {
+    .modal-body img {
+        height: 6vw;
+    }
+
+    #champ_date1, select, input, .selecteur, .btn-modal {
+        width: 90%;
+    }
+}

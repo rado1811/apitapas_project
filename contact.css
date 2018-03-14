@@ -1,24 +1,13 @@
 form {
 	margin: 5% 0 0 0;
+	text-align: center;
 }
-
-/*.form .input-lg {
-	background-color: #57777f;
-}*/
 
 .form, .map {
 	margin: 0;
 	padding: 3%;
 	height: 50vw;
 	background-color: #89aeb7;
-}
-
-.form h1 {
-	font-family: "mermaid-reg", serif;
-	text-align: center;
-	color: white;
-	font-size: 4rem;
-	margin: 0;
 }
 
 .form p {
@@ -29,6 +18,21 @@ form {
 .form img {
 	width: 17vw;
 	margin: 2rem 0 0 0;
+	float: left;
+}
+
+.contact h2 {
+	font-family: "mermaid-reg", serif;
+	text-align: center;
+	color: #89aeb7;
+	font-size: 4.5rem;
+	margin: 0;
+}
+
+.glyphicon {
+	text-align: center;
+	color: white;
+	font-size: 5rem;
 }
 
 map-responsive {
@@ -73,20 +77,51 @@ map-responsive {
 	color: #89aeb7;
 }
 
-@media (max-width: 770px) {
+@media (max-width: 500px) {
 	.form {
-		margin: 0;
-		padding: 10%;
+		padding: 5%;
 		height: 100%;
+	}
+
+	.form img {
+		width: 35vw;
+	}
+
+	form {
+		margin: 5% 0 0 0;
+	}
+
+	.content-text h2 {
+	font-size: 3rem;
 	}
 
 	.map {
 		height: 100vw;
 	}
+
+	.glyphicon-send {
+		margin-bottom: 3rem;
+	}
+}
+
+@media (max-width: 768px) {
+	.glyphicon {
+		font-size: 3rem;
+	}
+}
+
+@media (min-width: 1024px) {
+	.form h2 {
+		font-size: 4.5rem;
+	}
+
+	.form-control {
+		padding: 5%;
+	}
 }
 
 @media (min-width: 1280px) {
-	.form h1 {
+	.form h2 {
 		font-size: 6rem;
 	}
 

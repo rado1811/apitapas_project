@@ -1,4 +1,5 @@
-  <!DOCTYPE html>
+<!DOCTYPE html>
+
 <html>
 
 <head>
@@ -11,6 +12,7 @@
   <link rel="stylesheet" type="text/css" href="calendar.css">
   <link rel="stylesheet" type="text/css" href="caroussel.css">
   <link rel="stylesheet" type="text/css" href="gastropub.css">
+  <link rel="stylesheet" type="text/css" href="semaine.css">
   <link rel="stylesheet" type="text/css" href="contact.css">
   <link rel="stylesheet" type="text/css" href="footer.css">
 
@@ -56,72 +58,117 @@
   <img src="logo/logo_white (autre copie).svg" alt="logo market tavern" class="logo img-responsive">
 </section>
 
+	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+         <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-brand-centered">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+             </div>             <!-- Collect the nav links, forms, and other content for toggling -->
+            <a class="navbar-brand navbar-brand-centered hidden-xs">
+                  <img src="logo/logo.svg" alt="logo market tavern" class="logo">
+              </a>
+            <div class="collapse navbar-collapse" id="navbar-brand-centered">
+              <ul class="nav navbar-nav navbar-left">
+                <li><a href="#">Presentation</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Evenements</a></li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Contact / Horaires</a></li>
+                <button type="button" class="btn btn-primary btn-lg hidden-xs" data-toggle="modal" data-target="#myModal">
+            Réserver
+        </button>
+        		</ul>
+		<!-- bouton reserver mobile -->
+		<section>
+		 <button class="btn_mobile visible-xs">Reserver</button>
+		</section>
 
-<!-- Modal -->
+	</div>
+	</div>
+	</nav>	
+
+	<!-- Modal -->
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-      <div class="modal-dialog" role="document">
-          <div class="modal-content">
+    	<div class="modal-dialog" role="document">
+        	<div class="modal-content">
+          	<!--
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 <h4 class="modal-title" id="myModalLabel">Réservation</h4>
-              </div>
-            <div class="modal-body">
-
-              <!-- Selectionner la date -->
-            <input type="text" value="" name="date1" id="champ_date1" size="15" maxlength="10" placeholder="Date">
-            <div id="calendarMain1"></div>
-            <script type="text/javascript">
-            //<![CDATA[
-            calInit("calendarMain1", "", "champ_date1", "jsCalendar", "day", "selectedDay");
-            //]]>
-            </script>
-
-              <!-- Selectionner le nombre de personnes -->
-            <form method="post">
-              <select name="pays" class="selecteur">
-                  <option value="personnes">Nombre de personnes</option>
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                  <option value="5">5</option>
-                  <option value="6 et plus">6 et plus</option>
-              </select>
-            </form>
-
-            <!-- Selectionner l'heure -->
-            <form method="post">
-              <select name="pays" class="selecteur">
-                  <option value="personnes">Choisir l'heure</option>
-                  <option value="1">12h00</option>
-                  <option value="2">12h30</option>
-                  <option value="3">13h00</option>
-                  <option value="4">13h30</option>
-                  <option value="4">14h00</option>
-                  <option value="1">19h00</option>
-                  <option value="2">19h30</option>
-                  <option value="3">20h00</option>
-                  <option value="4">20h30</option>
-                  <option value="3">21h00</option>
-                  <option value="4">21h30</option>
-              </select>
-            </form>
-
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-primary btn-modal">Réserver</button>
             </div>
-          </div>
-      </div>
-    </div>
+			-->
+		      	<div class="frame-modal">
+		      		<!--
+		      		<div class="modal-header">
+			        	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		      		</div>
+		      		-->
+			     	<div class="modal-body">		
+						<form method="post">
 
+							<img src="im/pig_beige.svg"><br />
 
-<!-- bouton reserver mobile -->
-<section>
-	<button class="btn_mobile visible-xs">Reserver</button>
-</section>
+							<!-- Selectionner la date -->
+							<input type="text" value="" name="date1" id="champ_date1" size="15" maxlength="10" placeholder="Date" class="modal-input">
+							<div id="calendarMain1"></div>
+							<script type="text/javascript">
+								//<![CDATA[
+								calInit("calendarMain1", "", "champ_date1", "jsCalendar", "day", "selectedDay");
+								//]]>
+							</script>
 
+							<!-- Selectionner le nombre de personnes -->
+							<select name="personnes" class="modal-input">
+							    <option value="personnes">Nombre de personnes</option>
+							    <option value="1">1</option>
+							    <option value="2">2</option>
+							    <option value="3">3</option>
+							    <option value="4">4</option>
+							    <option value="5">5</option>
+							    <option value="6 et plus">6 et plus</option>
+							</select>
+							<br />
 
+							<!-- Selectionner l'heure -->
+							<select name="heure" class="modal-input">
+							    <option value="personnes">Choisir l'heure</option>
+							    <option value="1">12h00</option>
+							    <option value="2">12h30</option>
+							    <option value="3">13h00</option>
+							    <option value="4">13h30</option>
+							    <option value="4">14h00</option>
+							    <option value="1">19h00</option>
+							    <option value="2">19h30</option>
+							    <option value="3">20h00</option>
+							    <option value="4">20h30</option>
+							    <option value="3">21h00</option>
+							    <option value="4">21h30</option>
+							</select>
+							<br />
+
+							<input type="email" name="email" placeholder="Votre email" class="modal-input" />
+							<br />
+
+							<input type="telephone" name="telephone" placeholder="Votre téléphone" class="modal-input" />
+							<br />
+
+						</form>
+			      	</div> <!-- Fermeture modal-body -->
+
+			      	<div class="modal-footer">
+					    <button type="button" class="btn btn-primary btn-modal">Réserver</button>
+				    </div>
+
+			    </div> <!-- Fermeture frame-modal -->
+		    </div> <!-- Fermeture modal-content -->
+		</div> <!-- Fermeture modal-dialog -->
+	</div> <!-- Fermeture modal -->
 
 	<div class="container-fluid">
 		<div class="accroche"><h1>Le gastropub de Bordeaux</h1></div>
@@ -135,7 +182,6 @@
 						<li data-target="#carousel-generic" data-slide-to="1"></li>
 						<li data-target="#carousel-generic" data-slide-to="2"></li>
 					</ol>
-
 
 					<div class="carousel-inner" role="listbox">		
 						<div class="item active">
@@ -182,6 +228,11 @@
 
 	<!-- Le Gastropub de Bordeaux -->
 	<div class="container-fluid">
+
+		<div class="titre-section">
+			<h2>L'histoire du Maket Tavern</h2>
+		</div>
+
 		<div class="row">
 			
 			<div class="col-sm-6 hidden-xs">
@@ -193,18 +244,18 @@
 			<div class="col-sm-6">
 				<div class="content-text histoire">
 					<div class="frame">
-						<h1>L'histoire du Market Tavern</h1>
+						<img src="im/pig.svg">
 						<div class="presentation">
 							<p>Opened in the start of 2015, The Market Tavern Bordeaux GastroPub is on the forefront of modern pub food and tasty craft beers on tap. Inspired by the modern gastro-pubs of London, TMT is a small family oriented establishment in the heart of Bordeaux’s chic and historic Chartrons district.<br />
 							Welcoming you with open arms seven days a week from 11am until 2am, this family owned pub has 40 seats inside and 40 seats on a terrace with table service all day. During lunchtimes you can enjoy the “Formule du Midi” that includes a selection of different starters, main courses and desserts that changes every day using fresh produce, and a set evening Menu with our pub classics such as Beer Battered Fish and Chips and a homemade Tavern Pie.<br />
 							The Market Tavern Bordeaux GastroPub has an international and bilingual staff (The Marketeers) that are always ready and willing to help with any questions customers may have about the beers, the food or the city of Bordeaux.</p>
 						</div>
-					</div>
-				</div>
-			</div>
+					</div> <!-- Fermeture de frame -->
+				</div> <!-- Fermeture de content-text histoire -->
+			</div> <!-- Fermeture de col-sm6 -->
 
-		</div>
-	</div>
+		</div> <!-- Fermeture de row -->
+	</div> <!-- Fermeture de container-fluid -->
 
 
 	<!-- Menu -->
@@ -304,7 +355,6 @@
 							<img src="im/Brunch.jpg" alt="L'équipe du Maket Tavern Bordeaux">
 						</div>
 						<div class="col-sm-3 description-plat">
-
 							<h3>Market Breakfast</h3>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 							<h4>10€</h4>
@@ -376,15 +426,85 @@
 				</div><!--Fin onglet boisson-->
 			</div><!--Fin du tab content-->		
 		</div><!-- Fin du container fluid-->
-
+<!--SPORT-->
 	
-	<section>
-		<div class="container-fluid">
-			<div class="row">
+
+
+		<div class="container-fluid main_week">
+
+		<div class="background_title">
+			<h2 class="title_event">Evenements sportifs</h2>
+		</div>
+
+      <div class="row row_week">
+            <div class="col-sm-6 imgcontainer"><!--col pic-->
+            	<figure>
+            		<img class="image-responsive" src="im/équipe1.jpg">
+            	</figure>
+            </div><!--col pic-->
+            
+            <div class="col-sm-6 weekcontainermain"><!--col tab-->
+            	<div class="week"><!--week1-->
+       							<div class="week_mon_fri">
+       								<h3 class="title_week">Cette semaine</h3>
+
+									<h4>Lundi</h4>
+									<p>18h France - Irelande &nbsp; <span class="ball">A</span>
+									<p>20h PSG - Barsa &nbsp;<span class="ball">A</span>
+									
+									<h4>Mardi</h4>
+									<p>20h PSG - Barsa &nbsp;<span class="ball">A</span>
+									
+									<h4>Mercredi</h4>
+									<p>18h France - Irelande &nbsp;<span class="ball">J</span>
+									<p>20h PSG - Barsa &nbsp;<span class="ball">A</span>
+									
+									<h4>Jeudi</h4>
+									<p>20h PSG - Barsa &nbsp;<span class="ball">A</span>
+									
+									<h4>Vendredi</h4>
+									<p>18h France - Irelande &nbsp;<span class="ball">J</span>
+									<p>20h PSG - Barsa &nbsp;<span class="ball">D</span>
+									
+								</div>
+
+								
+
+								<div class="weekend">
+									<h4>Samedi</h4>
+									<p>18h France - Irelande &nbsp;<span class="ball">J</span></p>
+									<p>20:00 PSG - Barsa &nbsp;<span class="ball">Y</span>
+									<p>00:00 Ny - Toronto &nbsp;<span class="ball">N</span>
+
+									<h4>Dimanche</h4>
+									<p>18h France - Irelande &nbsp;<span class="ball">J</span>
+									<p>20h PSG - Barsa &nbsp;<span class="ball">R</span>
+									<p>00h Ny - Toronto &nbsp;<span class="ball">N</span>
+								</div>
+				</div>
 				
+
+            </div>	
+       </div>
+</div>
+
+
+
+<!--/SPORT-->
+
+	<section class="contact">
+		<div class="container-fluid">
+
+			<div class="titre-section">
+				<h2>Contactez-nous</h2>
+			</div>
+
+			<div class="row">			
 				<div class="col-sm-6 form">
 					<div class="frame">
-						<h1>Contactez-nous</h1>
+
+						<span class="glyphicon glyphicon-send"></span><br />
+
 						<form>
 							<div class="form-group">
 						    	<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Votre email *">
@@ -398,29 +518,30 @@
 							<img src="im/captcha.jpg">
 							<button type="submit" class="btn-contact">Envoyer</button>
 						</form>
-					</div>
-				</div>
+
+					</div> <!-- Fermeture de frame -->
+				</div> <!-- Fermeture de col-sm6 -->
 
 				<div class="col-sm-6 map">
 					<div class="map-responsive">
 						<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11313.913872207922!2d-0.5722752!3d44.8525534!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb03531d05a62180!2sThe+Market+Tavern!5e0!3m2!1sfr!2sfr!4v1520451483260" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 					</div>
-				</div>
 
-			</div>
-		</div>
+				</div> <!-- Fermeture de col-sm6 -->
+			</div> <!-- Fermeture de row -->
+		</div> <!-- Fermeture de container-fluid -->
 	</section>
 
 	<footer>
-
 		<div class="container-fluid">
 
-			<p>The Market Tavern - 15 Rue Rode, 33000 Bordeaux - <b>05 56 44 09 58</b></p>
+			<p>The Market Tavern, 15 Rue Rode, 33000 Bordeaux  <b> 05 56 44 09 58</b></p>
 
-			<div class="row">
+			<div class="row footer">
 
 				<div class="col-sm-6">
 					<div class="horaire">
+						<p><span class="picto-footer">A</span></p>
 						<h2>Horaires d'ouverture</h2>
 						<p>Lundi au vendredi : <span class="text-bold">12h00 - 00h00</span></p>
 						<p>Week-end : <span class="text-bold">12h00 - 02h00</span></p>
@@ -429,15 +550,15 @@
 
 				<div class="col-sm-6">
 					<div class="horaire">
-						<h2>Horaires de service</h2>
+						<p><span class="picto-footer">W</span></p>
+						<h2>Horaires de restauration</h2>
 						<p>Lundi au vendredi : <span class="text-bold">12h00 - 14h30</span> et <span class="text-bold">19h00 - 22h00</span></p>
 						<p>Week-end : <span class="text-bold">12h30 - 15h00</span> et <span class="text-bold">19h00 - 22h00</span></p>
 					</div>
 				</div>
 
-			</div>
-		</div>
-
+			</div> <!-- Fermeture de row -->
+		</div> <!-- Fermeture de container-fluid -->
 	</footer>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
