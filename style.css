@@ -54,13 +54,14 @@ body, section, nav, footer, .container-fluid, .row {
 	height: 45vw;
 }
 
-/* Nav */
+/* Navbar */
 
 .navbar {
 	background-color: #9bc1ca;
 	margin: 0;
 	border: 0;
 	opacity: 0.9;
+	z-index: 4;
 }
 
 .navbar li a{
@@ -77,13 +78,17 @@ body, section, nav, footer, .container-fluid, .row {
 }
 
 .navbar-right {
-	right: 10%;
+	right: 15%;
 	left: 40%;
 }
 
+
+
+/* Logo */
+
 .logo-div{
 	position: absolute;
-	z-index: 1;
+	z-index: 10;
 }
 
 .logo{
@@ -95,6 +100,8 @@ body, section, nav, footer, .container-fluid, .row {
 	height: auto;
 	z-index: 1;
 }
+
+/* bouton reserver mobile*/
 
 .btn_mobile{
 	position: fixed;
@@ -108,6 +115,26 @@ body, section, nav, footer, .container-fluid, .row {
   	z-index:1;
 }
 
+/* positionnement logo en mobile */
+@media (max-width: 768px) {
+	.logo {
+		display: contents;
+		position: fixed;
+		top: 0;
+		z-index: 1;
+	}
+
+	.collapse ul{
+	margin-bottom: 0;
+	margin-top: 0;
+	}
+}
+
+@media (min-width: 767px) and (max-width: 850px) {
+	.logo {
+		display: none;
+	}
+}
 
 /* Menu */
 
@@ -117,7 +144,7 @@ body, section, nav, footer, .container-fluid, .row {
 	padding: 2rem 0 0 0;
 }
 
-.menu h1 {
+.menu h1 {	
 	font-size: 6rem;
 	text-align: center;
 }
