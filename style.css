@@ -13,7 +13,6 @@
   src:  url('fonts/Mermaid1001.ttf');
 }
 
-
 h1, h2, h3 {
 	font-family: "mermaid", serif;
 }
@@ -93,6 +92,59 @@ body, section, nav, footer, .container-fluid, .row {
 	top: 15px;
 }
 
+/* Nav */
+
+.navbar {
+	background-color: #9bc1ca;
+	margin: 0;
+	border: 0;
+	opacity: 0.9;
+}
+
+.navbar li a{
+	font-size: 2rem;
+	background: none;
+	font-family: "angleterre";
+}
+
+.navbar-default .navbar-nav>li>a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.navbar-right {
+	right: 10%;
+	left: 40%;
+}
+
+.logo-div{
+	position: absolute;
+	z-index: 1;
+}
+
+.logo{
+	position: fixed;
+	left: 42%;
+	width: 16%;
+	right: 42%;
+	top: -19vw;
+	height: auto;
+	z-index: 1;
+}
+
+.btn_mobile{
+	position: fixed;
+  	bottom: -4px;
+  	width: 100%;
+  	background-color : #9bc1ca;
+  	color: white;
+  	padding: 10px 20px;
+  	border-radius: 4px;
+  	border-color: #46b8da;
+  	z-index:1;
+}
 
 
 /* Menu */

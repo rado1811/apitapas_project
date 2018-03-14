@@ -1,24 +1,66 @@
 <!DOCTYPE html>
+
 <html>
 
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
-	<title>The Market Tavern Bordeaux</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" type="text/css" href="menu.css">
-	<link rel="stylesheet" type="text/css" href="calendar.css">
-	<link rel="stylesheet" type="text/css" href="caroussel.css">
-	<link rel="stylesheet" type="text/css" href="gastropub.css">
-	<link rel="stylesheet" type="text/css" href="contact.css">
-	<link rel="stylesheet" type="text/css" href="footer.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
+  <title>The Market Tavern Bordeaux</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="menu.css">
+  <link rel="stylesheet" type="text/css" href="calendar.css">
+  <link rel="stylesheet" type="text/css" href="caroussel.css">
+  <link rel="stylesheet" type="text/css" href="gastropub.css">
+  <link rel="stylesheet" type="text/css" href="semaine.css">
+  <link rel="stylesheet" type="text/css" href="contact.css">
+  <link rel="stylesheet" type="text/css" href="footer.css">
 
-	<script type="text/javascript" src="jsSimpleDatePickr.js"></script>
-	<script type="text/javascript" src="jsSimpleDatePickrInit.js"></script>
+  <script type="text/javascript" src="jsSimpleDatePickr.js"></script>
+  <script type="text/javascript" src="jsSimpleDatePickrInit.js"></script>
 </head>
 
 <body>
+  
+  <!-- Nav -->
+
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+    </div> 
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+    <a class="navbar-brand navbar-brand-centered hidden-xs">
+        <img src="logo/logo_white.svg" alt="logo market tavern" class="logo img-responsive">
+
+    </a>
+
+    <div id="navbarCollapse" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav navbar-left">
+        <li><a href="#">Presentation</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">Evenements</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <a ></a>
+        <li><a href="#">Contact / Horaires</a></li>
+        <button type="button" class="btn btn-primary btn-lg hidden-xs" data-toggle="modal" data-target="#myModal"> Réserver </button>
+      </ul> 
+    </div>
+  </div><!-- /.container-fluid -->
+</nav>
+
+<!-- Logo -->
+<section class="logo-div">
+  <img src="logo/logo_white.svg" alt="logo market tavern" class="logo img-responsive">
+</section>
 
 	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
          <div class="container-fluid">
@@ -54,82 +96,84 @@
 	</div>
 	</div>
 	</nav>	
-			
 
+	<!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    	<div class="modal-dialog" role="document">
+        	<div class="modal-content">
+          	<!--
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Réservation</h4>
+            </div>
+			-->
+		      	<div class="frame-modal">
+		      		<!--
+		      		<div class="modal-header">
+			        	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		      		</div>
+		      		-->
+			     	<div class="modal-body">		
+						<form method="post">
 
-		<!-- Modal -->
-		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-			<div class="modal-dialog" role="document">
-		    	<div class="modal-content">
+							<img src="im/pig_beige.svg"><br />
 
-		      		<div class="frame-modal">
-		      			<!--
-		      			<div class="modal-header">
-			        		<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-		      			</div>
-		      			-->
-			     		<div class="modal-body">		
-							<form method="post">
+							<!-- Selectionner la date -->
+							<input type="text" value="" name="date1" id="champ_date1" size="15" maxlength="10" placeholder="Date" class="modal-input">
+							<div id="calendarMain1"></div>
+							<script type="text/javascript">
+								//<![CDATA[
+								calInit("calendarMain1", "", "champ_date1", "jsCalendar", "day", "selectedDay");
+								//]]>
+							</script>
 
-								<img src="im/pig_beige.svg"><br />
+							<!-- Selectionner le nombre de personnes -->
+							<select name="personnes" class="modal-input">
+							    <option value="personnes">Nombre de personnes</option>
+							    <option value="1">1</option>
+							    <option value="2">2</option>
+							    <option value="3">3</option>
+							    <option value="4">4</option>
+							    <option value="5">5</option>
+							    <option value="6 et plus">6 et plus</option>
+							</select>
+							<br />
 
-								<!-- Selectionner la date -->
-								<input type="text" value="" name="date1" id="champ_date1" size="15" maxlength="10" placeholder="Date" class="modal-input">
-								<div id="calendarMain1"></div>
-								<script type="text/javascript">
-									//<![CDATA[
-									calInit("calendarMain1", "", "champ_date1", "jsCalendar", "day", "selectedDay");
-									//]]>
-								</script>
+							<!-- Selectionner l'heure -->
+							<select name="heure" class="modal-input">
+							    <option value="personnes">Choisir l'heure</option>
+							    <option value="1">12h00</option>
+							    <option value="2">12h30</option>
+							    <option value="3">13h00</option>
+							    <option value="4">13h30</option>
+							    <option value="4">14h00</option>
+							    <option value="1">19h00</option>
+							    <option value="2">19h30</option>
+							    <option value="3">20h00</option>
+							    <option value="4">20h30</option>
+							    <option value="3">21h00</option>
+							    <option value="4">21h30</option>
+							</select>
+							<br />
 
-								<!-- Selectionner le nombre de personnes -->
-								<select name="personnes" class="modal-input">
-								    <option value="personnes">Nombre de personnes</option>
-								    <option value="1">1</option>
-								    <option value="2">2</option>
-								    <option value="3">3</option>
-								    <option value="4">4</option>
-								    <option value="5">5</option>
-								    <option value="6 et plus">6 et plus</option>
-								</select>
-								<br />
+							<input type="email" name="email" placeholder="Votre email" class="modal-input" />
+							<br />
 
-								<!-- Selectionner l'heure -->
-								<select name="heure" class="modal-input">
-								    <option value="personnes">Choisir l'heure</option>
-								    <option value="1">12h00</option>
-								    <option value="2">12h30</option>
-								    <option value="3">13h00</option>
-								    <option value="4">13h30</option>
-								    <option value="4">14h00</option>
-								    <option value="1">19h00</option>
-								    <option value="2">19h30</option>
-								    <option value="3">20h00</option>
-								    <option value="4">20h30</option>
-								    <option value="3">21h00</option>
-								    <option value="4">21h30</option>
-								</select>
-								<br />
+							<input type="telephone" name="telephone" placeholder="Votre téléphone" class="modal-input" />
+							<br />
 
-								<input type="email" name="email" placeholder="Votre email" class="modal-input" />
-								<br />
+						</form>
+			      	</div> <!-- Fermeture modal-body -->
 
-								<input type="telephone" name="telephone" placeholder="Votre téléphone" class="modal-input" />
-								<br />
+			      	<div class="modal-footer">
+					    <button type="button" class="btn btn-primary btn-modal">Réserver</button>
+				    </div>
 
-							</form>
-			      		</div> <!-- Fermeture modal-body -->
+			    </div> <!-- Fermeture frame-modal -->
+		    </div> <!-- Fermeture modal-content -->
+		</div> <!-- Fermeture modal-dialog -->
+	</div> <!-- Fermeture modal -->
 
-			      		<div class="modal-footer">
-					        <button type="button" class="btn btn-primary btn-modal">Réserver</button>
-				    	</div>
-
-			    	</div> <!-- Fermeture frame-modal -->
-		    	</div> <!-- Fermeture modal-content -->
-			</div> <!-- Fermeture modal-dialog -->
-		</div> <!-- Fermeture modal -->
-
-	
 	<div class="container-fluid">
 		<div class="accroche"><h1>Le gastropub de Bordeaux</h1></div>
 		<div class="row">
@@ -386,10 +430,75 @@
 				</div><!--Fin onglet boisson-->
 			</div><!--Fin du tab content-->		
 		</div><!-- Fin du container fluid-->
-
+<!--SPORT-->
 	
+
 	<!-- Contact -->
 	<section class="contact">
+
+		<div class="container-fluid main_week">
+
+		<div class="background_title">
+			<h2 class="title_event">Evenements sportifs</h2>
+		</div>
+
+      <div class="row">
+            <div class="col-sm-6 imgcontainer"><!--col pic-->
+            	<figure>
+            		<img class="image-responsive" src="im/équipe1.jpg">
+            	</figure>
+            </div><!--col pic-->
+            
+            <div class="col-sm-6 "><!--col tab-->
+            	<div class="week"><!--week1-->
+       							<div class="week_mon_fri">
+       								<h3 class="title_week">Cette semaine</h3>
+
+									<h4>Lundi</h4>
+									<p>18h France - Irelande &nbsp; <span class="ball">A</span>
+									<p>20h PSG - Barsa &nbsp;<span class="ball">A</span>
+									
+									<h4>Mardi</h4>
+									<p>20h PSG - Barsa &nbsp;<span class="ball">A</span>
+									
+									<h4>Mercredi</h4>
+									<p>18h France - Irelande &nbsp;<span class="ball">J</span>
+									<p>20h PSG - Barsa &nbsp;<span class="ball">A</span>
+									
+									<h4>Jeudi</h4>
+									<p>20h PSG - Barsa &nbsp;<span class="ball">A</span>
+									
+									<h4>Vendredi</h4>
+									<p>18h France - Irelande &nbsp;<span class="ball">J</span>
+									<p>20h PSG - Barsa &nbsp;<span class="ball">D</span>
+									
+								</div>
+
+								
+
+								<div class="weekend">
+									<h4>Samedi</h4>
+									<p>18h France - Irelande &nbsp;<span class="ball">J</span></p>
+									<p>20:00 PSG - Barsa &nbsp;<span class="ball">Y</span>
+									<p>00:00 Ny - Toronto &nbsp;<span class="ball">N</span>
+
+									<h4>Dimanche</h4>
+									<p>18h France - Irelande &nbsp;<span class="ball">J</span>
+									<p>20h PSG - Barsa &nbsp;<span class="ball">R</span>
+									<p>00h Ny - Toronto &nbsp;<span class="ball">N</span>
+								</div>
+				</div>
+				
+
+            </div>	
+       </div>
+</div>
+
+
+
+<!--/SPORT-->
+
+	<section>
 		<div class="container-fluid">
 
 			<div class="titre-section">
@@ -430,12 +539,11 @@
 	</section>
 
 	<footer>
-
 		<div class="container-fluid">
 
 			<p>The Market Tavern, 15 Rue Rode, 33000 Bordeaux  <b> 05 56 44 09 58</b></p>
 
-			<div class="row">
+			<div class="row footer">
 
 				<div class="col-sm-6">
 					<div class="horaire">
@@ -455,9 +563,8 @@
 					</div>
 				</div>
 
-			</div>
-		</div>
-
+			</div> <!-- Fermeture de row -->
+		</div> <!-- Fermeture de container-fluid -->
 	</footer>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
