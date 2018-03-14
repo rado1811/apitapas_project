@@ -36,7 +36,7 @@
 	background-color: #89AEB7;
 }
 
-.row
+.rowweek
 {
 	background-color: #89AEB7;
 }
@@ -60,7 +60,7 @@
 }
 
 
-.col-sm-6 .week div h3
+.weekcontainermain .week div h3
 {
 	font-family: 'mermaid-reg';
 	font-size: 3rem;
@@ -68,7 +68,7 @@
 	color: white;
 }
 
-.col-sm-6 .week div h4
+.weekcontainermain .week div h4
 {
 	font-family: 'mermaid-reg';
 	font-size: 2rem;
@@ -76,12 +76,12 @@
 }
 
 
-.col-sm-6 .week div .ball
+.weekcontainermain .week div .ball
 {
 	font-family: 'ball';
 }
 
-.col-sm-6 .week div p
+.weekcontainermain .week div p
 {
 	font-family: 'angleterre';
 	font-size: 1.5rem;
@@ -135,18 +135,18 @@
 		line-height: 4rem;
 	}
 
-	.col-sm-6 .week div h3
+	.weekcontainer_main .week div h3
 	{
 		font-size: 2rem;
 	}
 
-	.col-sm-6 .week div h4
+	.weekcontainer_main .week div h4
 	{
 		font-size: 2rem;
 		
 	}
 
-	.col-sm-6 .week div p
+	.weekcontainer_main .week div p
 	{
 		font-size: 1.2rem;
 
