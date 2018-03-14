@@ -13,68 +13,6 @@
   src:  url('fonts/Mermaid1001.ttf');
 }
 
-/* Nav */
-
-.navbar {
-	background-color: #9bc1ca;
-	margin: 0;
-	border: 0;
-}
-
-.navbar li a{
-	font-size: 2rem;
-	color: white;
-}
-
-.navbar-default .navbar-nav>li>a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.navbar-brand {
-	position: relative;
-}
-
-.navbar-right {
-	right: 5%;
-}
-
-.logo{
-	position: absolute;
-	left: -5vw	;
-	width: 32rem;
-	top: -1vw;
-	height: auto;
-	display: block;
-}
-
-.btn_mobile{
-	position: fixed;
-  	bottom: -4px;
-  	width: 100%;
-  	background-color : #9bc1ca;
-  	color: white;
-  	padding: 10px 20px;
-  	border-radius: 4px;
-  	border-color: #46b8da;
-  	z-index:1;
-}
-
-@media screen and (min-width:768px){
-    .navbar-brand-centered {
-        position: absolute;
-        left: 50%;
-        display: block;
-        width: 160px;
-        text-align: center;
-        background-color: #9bc1ca;
-    }
-    
-.navbar>.container .navbar-brand-centered, .navbar>.container-fluid .navbar-brand-centered {
-        margin-left: -80px;
-} 
-
 
 h1, h2, h3 {
 	font-family: "mermaid", serif;
@@ -91,7 +29,7 @@ h2 {
 	margin: 0;
 }
 
-body, section {
+body, section, nav, footer, .container-fluid, .row {
 	margin: 0;
 	padding: 0;
 }
@@ -101,20 +39,58 @@ body, section {
 	padding: 0;
 }
 
-.contenu-texte p {
-	text-align: justify;
+/* Nav */
+
+.navbar-collapse {
+	border: none;
 }
 
-.presentation {
-	height: 30vw;
-	margin: 2rem 0 0 0;
-	overflow: hidden;
+.navbar-default {
+	margin: 0;
+	background: none;
+	border: none;
+	border-radius: 0;
+	box-shadow: none;
+	background-color: #9bc1ca;
 }
 
-.cadre {
-	border: solid 1px gray;
-	padding: 7%;
-	height: 45vw;
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: white;
+}
+
+#bs-example-navbar-collapse-1 .collapse .navbar-collapse {
+	margin: 0;
+}
+
+#bs-example-navbar-collapse-1 li a {
+  font-family: serif;
+  color: white;
+  font-size: 15px;
+  height: 43px;
+  padding: 15px 2% 0 2;
+}
+
+#bs-example-navbar-collapse-1 a:hover {
+  color: black;
+}
+
+#bs-example-navbar-collapse-1 a:active {
+  border-bottom: solid 5px white;
+}
+
+.navbar-brand {
+  padding: 10px 0 0 20px;
+}
+
+.navbar-toggle, .collapsed {
+  border: none;
+  background-color: #ed5502;
+}
+
+.separateur {
+	color: white;
+	height: 20px;
+	top: 15px;
 }
 
 
@@ -185,7 +161,7 @@ body, section {
     border: 0;
 }
 
-.navbar li a {
+.navbar li a{
     font-size: 2rem;
     color: white;
 }
@@ -204,7 +180,7 @@ body, section {
     right: 5%;
 }
 
-.logo {
+.logo{
     position: absolute;
     left: -5vw    ;
     width: 32rem;
@@ -213,7 +189,7 @@ body, section {
     display: block;
 }
 
-.btn_mobile {
+.btn_mobile{
     position: fixed;
      bottom: -4px;
      width: 100%;
@@ -225,9 +201,7 @@ body, section {
      z-index:1;
 }
 
-
-
-@media screen and (min-width:768px) {
+@media screen and (min-width:768px){
    .navbar-brand-centered {
        position: absolute;
        left: 50%;
@@ -235,9 +209,9 @@ body, section {
        width: 160px;
        text-align: center;
        background-color: #9bc1ca;
-    }
+   }
 }
    
 .navbar>.container .navbar-brand-centered, .navbar>.container-fluid .navbar-brand-centered {
-       margin-left: -80px;
+    margin-left: -80px;
 }

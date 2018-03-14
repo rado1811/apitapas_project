@@ -4,7 +4,7 @@
 }
 .nav-tabs.nav-justified>li>a {
 
-	font-family: "mermaid", serif;
+	font-family: "mermaid-reg", serif;
 	color:#333333;
 }
 
@@ -12,7 +12,7 @@
 /*changement police des items du menu pills*/
 .nav-tabs.nav-justified>li>a {
 	border-style: none;
-	font-family: "mermaid";
+	font-family: "mermaid-reg";
 	font-size: 2rem;
 	}
 
@@ -34,8 +34,7 @@
 	.btn-group, .btn-group-vertical {
 
 	margin-top:5%;
-	margin-right:30%; 
-	margin-left:30%;
+
 	}
 }
 
