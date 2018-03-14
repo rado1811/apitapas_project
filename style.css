@@ -13,6 +13,47 @@
   src:  url('fonts/Mermaid1001.ttf');
 }
 
+h1, h2, h3 {
+	font-family: "mermaid", serif;
+}
+
+p {
+	font-family: "angleterre", serif;
+}
+
+
+h2 {
+	text-align: center;
+	font-size: 2.5rem;
+	margin: 0;
+}
+
+body, section, nav, footer, .container-fluid, .row {
+	margin: 0;
+	padding: 0;
+}
+
+.col-sm-6 {
+	margin: 0;
+	padding: 0;
+}
+
+.contenu-texte p {
+	text-align: justify;
+}
+
+.presentation {
+	height: 30vw;
+	margin: 2rem 0 0 0;
+	overflow: hidden;
+}
+
+.cadre {
+	border: solid 1px gray;
+	padding: 7%;
+	height: 45vw;
+}
+
 /* Nav */
 
 .navbar {
@@ -66,48 +107,6 @@
   	border-color: #46b8da;
   	z-index:1;
 }
-
-h1, h2, h3 {
-	font-family: "mermaid", serif;
-}
-
-p {
-	font-family: "angleterre", serif;
-}
-
-
-h2 {
-	text-align: center;
-	font-size: 2.5rem;
-	margin: 0;
-}
-
-body, section, nav, footer, .container-fluid, .row {
-	margin: 0;
-	padding: 0;
-}
-
-.col-sm-6 {
-	margin: 0;
-	padding: 0;
-}
-
-.contenu-texte p {
-	text-align: justify;
-}
-
-.presentation {
-	height: 30vw;
-	margin: 2rem 0 0 0;
-	overflow: hidden;
-}
-
-.cadre {
-	border: solid 1px gray;
-	padding: 7%;
-	height: 45vw;
-}
-
 
 
 /* Menu */
