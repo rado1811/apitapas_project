@@ -1,41 +1,205 @@
-/*suppression des bordures des items du menu pills*/
-.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover, .nav-tabs.nav-justified>.active>a, .nav-tabs.nav-justified>.active>a:focus, .nav-tabs.nav-justified>.active>a:hover {
-	border-style: none;
-}
-.nav-tabs.nav-justified>li>a {
+body {
 
-	font-family: "mermaid", serif;
-	color:#333333;
+	background-color: #89aeb7;
+}
+
+.description-plat {
+	background-color: #89aeb7;
+}
+
+/*stylisation des tabs*/
+.pills-menu>.nav-tabs>li.active>a, .pills-menu>.nav-tabs>li.active>a:focus, .pills-menu>.nav-tabs>li.active>a:hover {
+
+	color:white;
+	background-color: #6d8c94;
+}
+
+.pills-menu>.nav>li>a:focus, .pills-menu>.nav>li>a:hover {
+
+	background-color: #89aeb7;
+	border: 1px solid white;
+}
+
+.menu ul li:active {
+
+	border-radius: none;
+}
+
+/*Stylisation du bouton télécharger le menu*/
+
+.btn {
+
+	background : #89aeb7;
+	border-color : white;
+}
+
+.dropdown-menu {
+
+	background-color: #89aeb7;
+	border-color: white;
+}
+
+.dropdown-menu>li>a {
+
+	color :white;
+}
+
+.btn.focus, .btn:focus, .btn:hover {
+
+	color : #e4dada;
+}
+/*Liseré entourant la description des plats*/
+.frame-menu {
+
+	border: solid 1px white;
+	padding: 7%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+  	justify-content: center;
 }
 
 
 /*changement police des items du menu pills*/
 .nav-tabs.nav-justified>li>a {
-	border-style: none;
-	font-family: "mermaid";
+	font-family: "mermaid-reg";
 	font-size: 2rem;
 	}
-
+/* ajustement taille police intitulés du plat*/
 .description-plat h3 {
 
-	font-family: "angleterre";
+	font-family: "mermaid-reg";
+	font-size: 1.9rem;
 }
 
-/*correction placement bouton téléchargement menu*/
+.description-plat p {
+
+	font-size: 1.1rem;
+}
+
+/*couleur police secction menu & pills*/
+
+.nav-tabs>li.active>a, .nav-tabs.nav-justified>li>a, body {
+
+	color:white;
+}
+
+.titre-section {
+    background-color: white;
+    margin: 0;
+    padding: 2%;
+}
+
+/*changement couleur titre de la sect° menu pour rester visible*/
+
+.titre-menu {
+	color: #89aeb7;
+}
+.sous-titre-menu {
+
+	margin:5% 0 1% 0;
+}
+
 .btn-group, .btn-group-vertical {
 
-	margin-top:20%;
+	margin-left: 81%
 }
 
+/*correction du placement en view tablette*/
+@media (max-width: 768px){
+
+	.description-plat{
+
+		height:25vw;
+	}
+
+	p{
+
+		line-height: 1;
+	}
+
+	.frame-menu h4 {
+
+		font-size: 1rem;
+	}
+
+	.frame-menu {
+
+		border: solid 1px white;
+		padding: 7%;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+	  	justify-content: center;
+	}
+
+	.photo-plat img{
+
+		height: 25vw;
+		max-width: 100%;
+		margin-top: 0;
+	}
+
+	.frame-menu h3 {
+
+		font-size: 1rem
+	}
+
+	.frame-menu h4 p {
+
+		font-size: 0.8rem;
+	}
+
+	.btn-group, .btn-group-vertical {
+
+		margin-left: 73%;
+	}
+}
 
 /*comportement responsive du boutton de téléchargement menu*/
 @media (max-width: 425px){
 
+	.photo-plat {
+
+		height:85vw;
+	}
+
+	.photo-plat img {
+
+		height:100vw;
+	}
+
+	.description-plat{
+
+		height:100%;
+		margin-top: 5%;
+		margin-bottom: 5%;
+	}
+
+	.frame-menu {
+
+	border: solid 1px white;
+	padding: 7%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+  	justify-content: center;
+	}
+
+	.frame-menu h3 {
+
+		font-size: 2rem
+	}
+
 	.btn-group, .btn-group-vertical {
 
-	margin-top:5%;
-	margin-right:30%; 
-	margin-left:30%;
+		margin-left:29%;
 	}
 }
+@media (max-width:320px) {
 
+	.btn-group, .btn-group-vertical {
+
+		margin-left: 25%;
+	}
+}
