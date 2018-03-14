@@ -1,38 +1,12 @@
-.inline-tab
+@font-face
 {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	margin-top: 2vw;
-	
-	
+	font-family: "mermaid-reg";
+	src:url('fonts/Mermaid1001.ttf');
 }
 
-.col-sm-6
+@font-face
 {
-	margin: 0;
-	padding: 0;
-	
+	font-family: "angleterre"
+	src:url('fonts/angltrr.ttf');
 }
 
-.pic-event img
-{
-	height: auto;
-	max-width: 100%;
-}
-
-
-.nav-tabs
-{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-
-}
-
-.tab-content
-{
-		height: 50vw;
-		background-color: #89AEB7;
-		color: #FFFFFF;
-}
