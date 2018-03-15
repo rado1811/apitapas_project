@@ -45,7 +45,7 @@ body, section, nav, footer, .container-fluid, .row {
 	background-color: #9bc1ca;
 	margin: 0;
 	border: 0;
-	opacity: 0.7;
+	opacity: 0.8;
 	z-index: 4;
 }
 
@@ -113,6 +113,10 @@ body, section, nav, footer, .container-fluid, .row {
 	margin-bottom: 0;
 	margin-top: 0;
 	}
+
+	.navbar {
+		opacity: 0.9;
+	}
 }
 
 @media (min-width: 767px) and (max-width: 850px) {
@@ -156,9 +160,6 @@ body, section, nav, footer, .container-fluid, .row {
 	padding: 2% 3% 2% 3%;
 	background-color: gray;
 }
-
-
-
 
 
 /* Media queries */
