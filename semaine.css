@@ -135,23 +135,29 @@
 		line-height: 4rem;
 	}
 
-	.weekcontainer_main .week div h3
+	.weekcontainermain .week div h3
 	{
 		font-size: 2rem;
 	}
 
-	.weekcontainer_main .week div h4
+	.weekcontainermain .week div h4
 	{
 		font-size: 2rem;
 		
 	}
 
-	.weekcontainer_main .week div p
+	.weekcontainermain .week div p
 	{
 		font-size: 1.2rem;
 
 	}
 
+	.weekcontainermain .week div .ball
+	{
+		font-size: 1.5vw;
+	}
+		
+	
 	.week h3
 	{
 		line-height: 5rem;
@@ -169,9 +175,9 @@
 
 }
 
-@media( max-width: 450px)
+@media( max-width: 500px)
 {
-	.week
+	.weekcontainermain .week
 	{
 		overflow-y: auto;
 		width: 90vw;

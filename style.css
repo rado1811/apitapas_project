@@ -9,6 +9,7 @@
 }
 
 @font-face {
+
   font-family: "mermaid-reg";
   src:  url('fonts/Mermaid1001.ttf');
 }
@@ -159,9 +160,6 @@ body, section, nav, footer, .container-fluid, .row {
 	padding: 2% 3% 2% 3%;
 	background-color: gray;
 }
-
-
-
 
 
 /* Media queries */

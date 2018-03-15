@@ -1,9 +1,8 @@
 <!DOCTYPE html>
-
 <html>
 
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
   <title>The Market Tavern Bordeaux</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   
@@ -41,12 +40,12 @@
 
     <div id="navbarCollapse" class="collapse navbar-collapse">
       <ul class="nav navbar-nav navbar-left">
-        <li><a href="#">Presentation</a></li>
-        <li><a href="#">Menu</a></li>
-        <li><a href="#">Evenements</a></li>
+        <li><a href="#presentation">Presentation</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#evenements">Evenements</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Contact / Horaires</a></li>
+        <li><a href="#contact">Contact / Horaires</a></li>
         <button type="button" class="btn btn-primary btn-lg hidden-xs" data-toggle="modal" data-target="#myModal"> Réserver </button>
       </ul> 
     </div> 
@@ -55,7 +54,7 @@
 
 <!-- Logo -->
 <section class="logo-div">
-  <img src="logo/logo_white (autre copie).svg" alt="logo market tavern" class="logo img-responsive">
+  <a href="#accueil"><img src="logo/logo_white (autre copie).svg" alt="logo market tavern" class="logo img-responsive"></a>
 </section>
 
 	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -72,12 +71,12 @@
            
             <div class="collapse navbar-collapse" id="navbar-brand-centered">
               <ul class="nav navbar-nav navbar-left">
-                <li><a href="#">Presentation</a></li>
-                <li><a href="#">Menu</a></li>
-                <li><a href="#">Evenements</a></li>
+                <li><a href="#presentation">Presentation</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#evenements">Evenements</a></li>
               </ul>
               <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">Contact / Horaires</a></li>
+                <li><a href="#contact">Contact / Horaires</a></li>
                 <button type="button" class="btn btn-primary btn-lg hidden-xs" data-toggle="modal" data-target="#myModal">
             Réserver
         </button>
@@ -170,14 +169,14 @@
 		</div> <!-- Fermeture modal-dialog -->
 	</div> <!-- Fermeture modal -->
 
-	<div class="container-fluid">
+	<div class="container-fluid" id="accueil">
 		<div class="accroche"><h1>Le gastropub de Bordeaux</h1></div>
 		<div class="row">
 			<div class="col-sm-6">
 				<!-- Caroussel 1 -->
 				<div id="carousel-generic" class="carousel slide" data-ride="carousel">
 					<!-- Indicators -->
-					<ol class="carousel-indicators">
+					<ol class="carousel-indicators hidden-xs">
 						<li data-target="#carousel-generic" data-slide-to="0" class="active"></li>
 						<li data-target="#carousel-generic" data-slide-to="1"></li>
 						<li data-target="#carousel-generic" data-slide-to="2"></li>
@@ -202,7 +201,7 @@
 				<!-- Caroussel 2 -->
 				<div id="carousel-generic-2" class="carousel slide" data-ride="carousel">
 					<!-- Indicators -->
-					<ol class="carousel-indicators">
+					<ol class="carousel-indicators hidden-xs">
 						<li data-target="#carousel-generic-2" data-slide-to="0" class="active"></li>
 						<li data-target="#carousel-generic-2" data-slide-to="1"></li>
 						<li data-target="#carousel-generic-2" data-slide-to="2"></li>
@@ -227,10 +226,10 @@
 	</div> <!-- Fin du container-fluid -->
 
 	<!-- Le Gastropub de Bordeaux -->
-	<div class="container-fluid">
+	<div class="container-fluid" id="presentation">
 
 		<div class="titre-section">
-			<h2>L'histoire du Maket Tavern</h2>
+			<h2>L'histoire du Market Tavern</h2>
 		</div>
 
 		<div class="row">
@@ -257,41 +256,44 @@
 		</div> <!-- Fermeture de row -->
 	</div> <!-- Fermeture de container-fluid -->
 
-
 	<!-- Menu -->
-	<section class="menu">
-		<div class="row">
-			<div class="col xs-12 col-sm-5 col-sm-offset-4">
-				<h1>Menu</h1>
-				<h2>nos best sellers</h2>
-			</div>
+	<section class="menu" id="menu">
+		<div class="titre-section titre-menu">
+			<h1>Menu</h1>
+		</div>
 
-			<div class="col-sm-3">
-		
-			  	<div class="btn-group" role="group">
-		    		<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-		  			Télécharger le menu
-		      			<span class="caret"></span>
-		    		</button>
-		    		<ul class="dropdown-menu">
-		      			<li><a href="im/market_menu.jpg" download="market_menu">Menu de la Semaine</a></li>
-		 	 			<li><a href="im/market_carte_boissons.jpg" download="market_drinks_menu">Carte des boissons</a></li>
-		    		</ul>
-		 		</div><!--Fin du bouton dropdown-->
-	 		</div><!--Fin col-sm-3-->
- 		</div><!--Fin de la row-->
+		<div class="sous-titre-menu ">
+			<h2>Nos best sellers</h2>
+		</div>
+
+		<div class="download-button">
+	
+		  	<div class="btn-group" role="group">
+
+	    		<button type="button" class="btn btn-btn-outline dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Télécharger le menu
+	      			<span class="caret"></span>
+	    		</button>
+
+	    		<ul class="dropdown-menu">
+	      			<li><a href="im/market_menu.jpg" download="market_menu">Menu de la Semaine</a></li>
+	 	 			<li><a href="im/market_brunch.jpg" download="market_drinks_menu">Brunch</a></li>
+	 	 			<li><a href="im/market_carte_boissons.jpg" download="market_drinks_menu">Carte des boissons</a></li>
+	    		</ul>
+	 		</div><!--Fin du bouton dropdown-->
+ 		</div><!--Fin col-xs-12-->
 	
 
-		
-		<ul class="nav nav-tabs nav-justified" role="tablist">
+		<div class="pills-menu"><!--Résolution conflit avec navbar-->
+			<ul class="nav nav-tabs nav-justified" role="tablist">
 
-		    	<li role="presentation" class="active"><a href="#Menu" aria-controls="Menu" role="tab" data-toggle="tab">Menu de la semaine</a></li>
+			    	<li role="presentation" class="active"><a href="#Menu" aria-controls="Menu" role="tab" data-toggle="tab">Menu de la semaine</a></li>
 
-			    <li role="presentation"><a href="#Brunch" aria-controls="Brunch" role="tab" data-toggle="tab">Brunch</a></li>
+				    <li role="presentation"><a href="#Brunch" aria-controls="Brunch" role="tab" data-toggle="tab">Brunch</a></li>
 
-			    <li role="presentation"><a href="#Boissons" aria-controls="Boissons" role="tab" data-toggle="tab">Boissons</a></li>
+				    <li role="presentation"><a href="#Boissons" aria-controls="Boissons" role="tab" data-toggle="tab">Boissons</a></li>
 
-	  	</ul>
+		  	</ul>
+	  	</div><!--Fin de la div pills-menu-->
 
 		<div class="container-fluid best-seller">				
 			<!--Onglet Menu de la semaine-->
@@ -303,37 +305,47 @@
 						</div>
 
 						<div class="col-sm-3 description-plat">
-							<h3>Burger  Bordelais</h3>
-							<p>Pain burger artisanal, steak haché de canard, sauce cheddar affiné maison, compotée d'oignons, salade et tomates.</p>
-							<h4>14.90€</h4>
+							<div class="frame-menu">
+								<h3>Burger  Bordelais</h3>
+								<p>Pain burger artisanal, steak haché de canard, sauce cheddar affiné maison, compotée d'oignons, salade et tomates.</p>
+								<h4>14.90€</h4>
+							</div>
 						</div><!--Fin plat 1-->
-					
-						<div class="col-sm-3 photo-plat"><!--Plat 2-->
-							<img src="im/veggie-burger-redim.jpg" alt="L'équipe du Maket Tavern Bordeaux">
-						</div>
-						<div class="col-sm-3 description-plat">
-							<h3>Veggie Burger</h3>
-							<p>Pain burger artisanal, galette de légumes, rosti de pommes de terre, sauce cheddar affiné maison, sauce Market, salade et tomates.</p>
-							<h4>12.90€</h4>
-						</div><!--Fin plat 2-->
-					</div><!--Fin row plat 1 & 2-->
-				
-					<div class="row hidden-xs"><!--Row plat 3 & 4-->
-						<div class="col-sm-3 photo-plat "><!--Plat 3-->
+						
+
+						<div class="col-sm-3 photo-plat "><!--Plat 2-->
 							<img src="im/fish_and_chips.jpg" alt="L'équipe du Maket Tavern Bordeaux">
 						</div>
 						<div class="col-sm-3 description-plat">
-							<h3>Traditional Fish and Chips</h3>
-							<p>Filet de poisson blanc dans une chapelure à la bière Twisted Thistle servi avec sauce trtare, frites fraîches et mushy peas.</p>
-							<h4>14.90€</h4>
+							<div class="frame-menu">
+								<h3>Fish and Chips</h3>
+								<p>Filet de poisson blanc dans une chapelure à la bière Twisted Thistle servi avec sauce trtare, frites fraîches et mushy peas.</p>
+								<h4>14.90€</h4>
+							</div>
+						</div><!--Fin plat 2-->					
+					</div><!--Fin row plat 1 & 2-->
+				
+					<div class="row hidden-xs"><!--Row plat 3 & 4-->
+
+						<div class="col-sm-3 photo-plat"><!--Plat 3-->
+							<img src="im/veggie-burger-redim.jpg" alt="L'équipe du Maket Tavern Bordeaux">
+						</div>					
+						<div class="col-sm-3 description-plat">
+							<div class="frame-menu">
+								<h3>Veggie Burger</h3>
+								<p>Pain burger artisanal, galette de légumes, rosti de pommes de terre, sauce cheddar affiné maison, sauce Market, salade et tomates.</p>
+								<h4>12.90€</h4>
+							</div>
 						</div><!--Fin plat 3-->
 						<div class="col-sm-3 photo-plat"><!--Plat 4-->
 							<img src="im/ribs.jpg" alt="L'équipe du Maket Tavern Bordeaux">
 						</div>
 						<div class="col-sm-3 description-plat">
-							<h3>Market BBQ Ribs</h3>
-							<p>Travers de porc fumés cuisson lente, caramélisés sauce barbecue servis avec frites fraîches et salade.</p>
-							<h4>12.90€</h4>
+							<div class="frame-menu">
+								<h3>Market BBQ Ribs</h3>
+								<p>Travers de porc fumés cuisson lente, caramélisés sauce barbecue servis avec frites fraîches et salade.</p>
+								<h4>12.90€</h4>
+							</div>
 						</div><!--Fin plat 4-->
 					</div><!-- Fin row plat 3 & 4-->
 				</div><!--Fin onglet menu de la semaine-->
@@ -346,38 +358,47 @@
 						</div>
 
 						<div class="col-sm-3 description-plat">
-							<h3>Market Salad</h3>
-							<p>Lorem ipsum dolor sit amet consectetur.</p>
-							<h4>10€</h4>
+							<div class="frame-menu">
+								<h3>Market Salad</h3>
+								<p>Salade avec bacon, jambon cru, chorizo, tomate concombre, radis, pomme, noix et vinaigrette.</p>
+								<h4>10€</h4>
+							</div>
 						</div><!--Fin plat Brunch 1-->
 					
 						<div class="col-sm-3 photo-plat"><!--Plat Brunch 2-->
 							<img src="im/Brunch.jpg" alt="L'équipe du Maket Tavern Bordeaux">
 						</div>
 						<div class="col-sm-3 description-plat">
-							<h3>Market Breakfast</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-							<h4>10€</h4>
+
+							<div class="frame-menu">
+								<h3>Market Breakfast</h3>
+								<p>Oeuf au plat, saucisse Cumberland, tranche de bacon, tomate, frites maison, haricots blancs en sauce, pain de mie toasté.</p>
+								<h4>10€</h4>
+							</div>
 						</div><!--Fin plat Brunch 2-->
 					</div><!--Fin row plat brunch 1 & 2-->
 				
 					<div class="row hidden-xs"><!--Row brunch 1 & 2-->
 						<div class="col-sm-3 photo-plat"><!--Plat Brunch 3-->
-							<img src="im/pièce_du_boucher.jpg" alt="L'équipe du Maket Tavern Bordeaux">
+							<img src="im/brownies.jpeg" alt="L'équipe du Maket Tavern Bordeaux">
 						</div>
 						<div class="col-sm-3 description-plat">
-							<h3>Pièce du boucher</h3>
-							<p>Lorem ipsum dolor sit amet consectetur.</p>
-							<h4>10€</h4>
+							<div class="frame-menu">
+								<h3>Brownies</h3>
+								<p>Avec des éclats de Petits Lu.</p>
+								<h4>4€</h4>
+							</div>
 						</div><!--Fin plat Brunch 3-->
 						<div class="col-sm-3 photo-plat"><!--Plat Brunch 4-->
-							<img src="im/avocado_burger.jpg" alt="L'équipe du Maket Tavern Bordeaux">
+							<img src="im/cheescake-resized.jpg" alt="L'équipe du Maket Tavern Bordeaux">
 						</div>
 						
 						<div class="col-sm-3 description-plat">
-							<h3>Avocado Burger</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-							<h4>10€</h4>
+							<div class="frame-menu">
+								<h3>Lemon Cheescake</h3>
+								<p>Cheesecake au citron.</p>
+								<h4>4€</h4>
+							</div>
 						</div><!--fin plat Brunch 4-->
 					</div><!--Fin row plat brunch 3 & 4-->
 				</div><!--Fin onglet Brunch-->
@@ -386,57 +407,68 @@
 				<div role="tabpanel" class="tab-pane" id="Boissons">
 					<div class="row"><!-- Row boisson 1 & 2-->
 						<div class="col-sm-3 photo-plat"><!--Début boisson 1-->
-							<img src="im/mordor.jpg" alt="L'équipe du Maket Tavern Bordeaux">
+							<img src="im/bloody_mary.jpeg" alt="L'équipe du Maket Tavern Bordeaux">
 						</div>
 
 						<div class="col-sm-3 description-plat">
-							<h3>Boisson 1</h3>
-							<p>Lorem ipsum dolor sit amet consectetur.</p>
-							<h4>10€</h4>
+								<div class="frame-menu">	
+								<h3>Bloody Mary</h3>
+								<p>Absolut Vodka, Tomato Juice,Worcester Sauce, Tabasco, Celery Salt, Black Pepper.</p>
+								<h4>8€</h4>
+							</div>
 						</div><!--Fin boisson 1-->
 					
 						<div class="col-sm-3 photo-plat"><!--Début boisson 2-->
-							<img src="im/mordor.jpg" alt="L'équipe du Maket Tavern Bordeaux">
+							<img src="im/whiskey_sour.jpg" alt="L'équipe du Maket Tavern Bordeaux">
 						</div>
 						<div class="col-sm-3 description-plat">
-							<h3>Boisson 2</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-							<h4>10€</h4>
+							<div class="frame-menu">	
+								<h3>Whiskey Sour</h3>
+								<p>Monkey Shoulder, Lemon Juice, Cane Sugar, Egg Yolk (optional).</p>
+								<h4>6.50€</h4>
+							</div>
 						</div><!--Fin boisson 2-->
 					</div><!-- Fin row boisson 1 & 2-->
 					
 					<div class="row"><!--Row boisson 3 & 4-->
 						<div class="col-sm-3 photo-plat"><!--Début boisson 3-->
-							<img src="im/mordor.jpg" alt="L'équipe du Maket Tavern Bordeaux">
+							<img src="im/baby_guinness.jpg" alt="L'équipe du Maket Tavern Bordeaux">
 						</div>
 						<div class="col-sm-3 description-plat">
-							<h3>Boisson 3</h3>
-							<p>Lorem ipsum dolor sit amet consectetur.</p>
-							<h4>10€</h4>
+							<div class="frame-menu">
+								<h3>Baby Guinness</h3>
+								<p>Kahlua, Bailey's Irish Cream.</p>
+								<h4>10€</h4>
+							</div>
 						</div><!--Fin boisson 3-->
 						<div class="col-sm-3 photo-plat"><!--Début boisson 4-->
-							<img src="im/mordor.jpg" alt="L'équipe du Maket Tavern Bordeaux">
+							<img src="im/Long_island.jpg" alt="L'équipe du Maket Tavern Bordeaux">
 						</div>
 						<div class="col-sm-3 description-plat">
-							<h3>Boisson 4</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-							<h4>10€</h4>
+							<div class="frame-menu">
+								<h3>Long Island Iced Tea</h3>
+								<p>Vodka, Gin, Rum, Tequila, Triple Sec, Sour Mix, Pespi.</p>
+								<h4>10€</h4>
+							</div>
 						</div><!--Fin boisson 4-->
 					</div><!--Fin row boisson 3 & 4-->
 				</div><!--Fin onglet boisson-->
 			</div><!--Fin du tab content-->		
 		</div><!-- Fin du container fluid-->
+	</section><!--Fin de la section menu-->
+
 <!--SPORT-->
+
 	
 
 
-		<div class="container-fluid main_week">
+		<div class="container-fluid main_week" id="evenements">
 
 		<div class="background_title">
 			<h2 class="title_event">Evenements sportifs</h2>
 		</div>
 
-      <div class="row row_week">
+      <div class="row rowweek">
             <div class="col-sm-6 imgcontainer"><!--col pic-->
             	<figure>
             		<img class="image-responsive" src="im/équipe1.jpg">
@@ -492,7 +524,7 @@
 
 <!--/SPORT-->
 
-	<section class="contact">
+	<section class="contact" id="contact">
 		<div class="container-fluid">
 
 			<div class="titre-section">
@@ -563,5 +595,8 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="mesfonctions.js"></script>
 
 </body>
+
+</html>

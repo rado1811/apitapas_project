@@ -69,6 +69,7 @@
 
 
 
+
 @media (max-width: 500px) {
 	.titre-section {
 		padding: 5% 0 0 0;
@@ -93,7 +94,6 @@
 	.frame {
 		height: 100%;
 	}
-
 	.photo-plat {
 		height: 200px;
 	}
@@ -103,8 +103,8 @@
 	}
 
 	.histoire img {
-	height: 10vw;
-	margin: 0;
+		height: 10vw;
+		margin: 0;
 	}
 }
 
