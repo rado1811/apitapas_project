@@ -1,12 +1,17 @@
-.container-fluid, .row {
-
-	margin:0;
-	padding: 0;
+.titre-section {
+	background-color: white;
+	margin: 0;
+	padding: 2%;
 }
 
-.histoire h1 {
-	color: white;
+.titre-section h2 {
+	color: #89aeb7;
 	font-size: 4.5rem;
+	margin: 0;
+}
+
+.histoire img {
+	height: 4vw;
 	margin: 0;
 }
 
@@ -44,7 +49,7 @@
 }
 
 .presentation {
-	height: 30vw;
+	height: 40vw;
 	margin: 3rem 0 0 0;
 	display: auto;
 	text-align: justify;
@@ -64,7 +69,16 @@
 
 
 
-@media (max-width: 770px) {
+
+@media (max-width: 500px) {
+	.titre-section {
+		padding: 5% 0 0 0;
+	}
+
+	.content-photo img, .photo-plat img {
+		max-width: 100%;
+		height: auto;
+	}
 
 	.content-text {
 		margin: 0;
@@ -80,12 +94,23 @@
 	.frame {
 		height: 100%;
 	}
+	.photo-plat {
+		height: 200px;
+	}
 
+	.description-plat {
+		height: 100%;
+	}
+
+	.histoire img {
+	height: 10vw;
+	margin: 0;
+	}
 }
 
 @media (min-width: 1366px) {
-	.histoire h1 {
-		font-size: 6rem;
+	.titre-section h2 {
+		font-size: 5rem;
 	}
 
 	.presentation {

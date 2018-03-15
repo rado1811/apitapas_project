@@ -1,0 +1,194 @@
+@font-face
+{
+	font-family: "mermaid-reg";
+	src:url('fonts/Mermaid1001.ttf');
+}
+
+@font-face
+{
+	font-family: "angleterre";
+	src:url('fonts/angltrr.ttf');
+}
+
+@font-face
+{
+	font-family: "ball";
+	src:url('fonts/ball.ttf')
+}
+
+
+.week h3
+{
+	line-height: 8rem;
+}
+.week h4
+{
+	line-height: 1rem;
+}
+
+.week p
+{
+	line-height: rem;
+}
+
+.main_week
+{
+	background-color: #89AEB7;
+}
+
+.rowweek
+{
+	background-color: #89AEB7;
+}
+
+.background_title
+{
+	background-color: white;
+	padding: 0;
+}
+
+/*Text and fonts*/
+
+.title_event
+{
+	font-family: 'mermaid-reg';
+	font-size: 4rem;
+	text-align: center;
+	margin: 0;
+	color: #89AEB7;
+	line-height: 8rem;
+}
+
+
+.weekcontainermain .week div h3
+{
+	font-family: 'mermaid-reg';
+	font-size: 3rem;
+	text-align: left;
+	color: white;
+}
+
+.weekcontainermain .week div h4
+{
+	font-family: 'mermaid-reg';
+	font-size: 2rem;
+	color: white;
+}
+
+
+.weekcontainermain .week div .ball
+{
+	font-family: 'ball';
+}
+
+.weekcontainermain .week div p
+{
+	font-family: 'angleterre';
+	font-size: 1.5rem;
+	color: white;
+}
+
+.imgcontainer figure img
+{
+	height: 50vw;
+	width: 50vw;	
+}
+
+/*week align*/
+
+.week
+{
+	display: flex;
+	flex-direction: row;
+	justify-content:space-around;
+	align-items: center;
+	border: 1px solid white;
+	width: 45vw;
+	height: 45vw;
+	padding: 5% 2% 5% 2%;
+	margin: 5% 0% 5% 5%;
+
+}
+
+.weekend
+{
+	display: flex;
+	flex-direction: column;
+
+}
+
+/*responsive align*/
+
+@media( max-width: 768px)
+{
+	.week
+	{
+	display: flex;
+	flex-direction: row;
+	justify-content:space-around;
+	 overflow-y: auto;
+	}
+
+	.title_event
+	{
+		font-size: 3rem;
+		line-height: 4rem;
+	}
+
+	.weekcontainermain .week div h3
+	{
+		font-size: 2rem;
+	}
+
+	.weekcontainermain .week div h4
+	{
+		font-size: 2rem;
+		
+	}
+
+	.weekcontainermain .week div p
+	{
+		font-size: 1.2rem;
+
+	}
+
+	.weekcontainermain .week div .ball
+	{
+		font-size: 1.5vw;
+	}
+		
+	
+	.week h3
+	{
+		line-height: 5rem;
+	}
+
+	.week h4
+	{
+		line-height: 1rem;
+	}
+
+	.week p
+	{
+		line-height: 1em;
+	}
+
+}
+
+@media( max-width: 500px)
+{
+	.weekcontainermain .week
+	{
+		overflow-y: auto;
+		width: 90vw;
+		height: auto;
+		padding: 5% 2% 5% 2%;
+		margin: 5% 0% 5% 5%;
+	}
+
+	.imgcontainer figure img
+{
+	height: auto;
+	width: 100vw;	
+}
+}

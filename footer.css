@@ -1,24 +1,70 @@
+@font-face {
+  font-family: "irish";
+  src:  url('fonts/Irish.ttf');
+}
+
 footer {
 	text-align: center;
 	padding: 3% 0% 2% 0%;
 	background-color: #556270;
 }
 
-footer p {
+.footer {
+	text-align: center;
+	padding: 3% 0% 2% 0%;
+	background-color: #556270;
+}
+
+.footer p, footer p {
 	font-size: 1.5rem;
-	line-height: 2rem;
+	line-height: 1rem;
 	color: #d8c091;
 }
 
-footer h2 {
+.footer h2 {
 	font-family: "mermaid-reg", serif;
 	font-size: 2.5rem;
-	line-height: 6rem;
+	line-height: 2rem;
 	color: #d8c091;
+	display: block;
+	margin: 0 0 3% 0;
 }
 
 .horaire {
 	margin: 5%;
 	padding: 0 0 2% 0;
 	border: solid 1px #d8c091;
+}
+
+.picto-footer {
+	font-family: "irish";
+	font-size: 6rem;
+	line-height: 6rem;
+	display: block;
+	margin: 3% 0 0 0;
+}
+
+@media (max-width: 500px) {
+	footer {
+		padding: 7% 2% 0 2%;
+	}
+
+	.footer p, footer p {
+		font-size: 1.5rem;
+		line-height: 2rem;
+	}
+
+}
+
+@media (max-width: 768px) {
+	.footer p {
+		line-height: 2rem;
+	}
+
+	.picto-footer {
+		font-size: 5rem;
+		line-height: 6rem;
+		display: block;
+		margin: 3% 0 0 0;
+	}
 }
