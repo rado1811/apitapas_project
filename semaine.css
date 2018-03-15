@@ -43,8 +43,8 @@
 
 .background_title
 {
-	background-color: white;
-	padding: 0;
+	background-color: #F1ECC8;
+	padding: 2%;
 }
 
 /*Text and fonts*/
@@ -52,10 +52,10 @@
 .title_event
 {
 	font-family: 'mermaid-reg';
-	font-size: 4rem;
+	font-size: 4.5rem;
 	text-align: center;
 	margin: 0;
-	color: #89AEB7;
+	color: #556270;
 	line-height: 8rem;
 }
 
