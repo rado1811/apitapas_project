@@ -1,16 +1,29 @@
-$(document).ready(function(){
-    // au clic sur un lien
-    $('a').on('click', function(evt){
-       // bloquer le comportement par défaut: on ne rechargera pas la page
-       evt.preventDefault(); 
-       // enregistre la valeur de l'attribut  href dans la variable target
-	     var target = $(this).attr('href');
-       /* le sélecteur $(html, body) permet de corriger un bug sur chrome et safari (webkit) */
-	 $('html, body')
-       // on arrête toutes les animations en cours 
-       .stop()
-       /* on fait maintenant l'animation vers le haut (scrollTop) vers notre ancre target */
-       .animate({scrollTop: $(target).offset().top}, 1500, 'swing');
-       /* .animate({styles},speed,easing,callback)*/
-    });
-});
+function juizScrollTo(element){         
+    $(element).click(function(){
+        var goscroll = false;
+        var the_hash = $(this).attr("href");
+        var regex = new RegExp("\#(.*)","gi");
+        var the_element = '';
+ 
+        if(the_hash.match("\#(.+)")) {
+            the_hash = the_hash.replace(regex,"$1");
+ 
+            if($("#"+the_hash).length>0) {
+                the_element = "#" + the_hash;
+                goscroll = true;
+            }
+            else if($("a[name=" + the_hash + "]").length>0) {
+                the_element = "a[name=" + the_hash + "]";
+                goscroll = true;
+            }
+ 
+            if(goscroll) {
+                $('html, body').animate({
+                    scrollTop:$(the_element).offset().top
+                }, 'slow');
+                return false;
+            }
+        }
+    });                 
+};
+juizScrollTo('a[href^="#"]');
